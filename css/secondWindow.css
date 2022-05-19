@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.second-part {
+    height: 1600px;
+    background-color: rgb(249, 238, 224);
+    padding-top: 100px;
+}
+
+.pack-containers {
+    display: flex;
+   justify-content: space-around;
+}
+
+.container-cities {
+    margin-top: 100px;
+    width: 250px;
+    height: 550px;
+    border: 2px solid #a9a4a4;
+    border-radius: 5px;
+    background-color: rgb(233, 239, 246);
+}
+
+.second-window-title {
+   text-align: center;
+    color: rgb(61, 59, 59);
+    font-size: 60px;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-top: 16px;
+}
+
+img {
+    padding: 6px;
+}
+
+.stars {
+    color: #54c0d7;
+    margin-left: 6px;
+}
+
+.title {
+    color: #54c0d7;
+    margin-left: 6px;
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+.date {
+    color: #7e7e7e;
+    font-size: 8px;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+.paragraph {
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.booking {
+    color: #7e7e7e;
+    margin-left: 6px;
+}
+
+.align,
+.btns {
+    display: flex;
+}
+
+.reference {
+    font-size: 9px;
+    margin-left: 6px;
+}
+
+.boxes {
+    border: none;
+    outline-color: transparent;
+    border-bottom: 2px solid #b2ced3;
+    margin-bottom: 12px;
+}
+
+.left {
+    margin-left: 14px;
+}
+
+.boxesdate {
+    border: none;
+    border-bottom: 2px solid #b2ced3;
+    margin-bottom: 12px;
+    outline-color: transparent;
+    width: 95px;
+    font-size: 11px;
+    margin-left: 6px;
+    margin-right: 1px;
+}
+
+.accept {
+    font-size: 12px;
+}
+
+.book {
+    margin-left: 10px;
+    background-color: #0897e8;
+    color: white;
+    border-radius: 2px;
+    border: #0897e8;
+    height: 28px;
+    width: 62px;
+    border-style: solid;
+}
+
+.book:hover {
+    background-color: white;
+    color: #0897e8;
+}
+
+.cancel {
+    margin-left: 6px;
+    background-color: #cbaa14;
+    color: white;
+    border-radius: 2px;
+    border: #cbaa14;
+    height: 28px;
+    width: 75px;
+    border-style: solid;
+}
+
+.cancel:hover {
+    background-color: white;
+    color: #cbaa14;
+}
