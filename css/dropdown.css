@@ -27,12 +27,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #d9c173;
 }
 
 .dropdown-menu li {
     padding: 10px;
     border-bottom: 3px solid #12121224;
-
 }
 
 .dropdown-menu li:hover {
