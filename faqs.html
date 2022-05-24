@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Option 1: Para levantar el modal. Código necesario -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/1-mainPage.css" title="Color">
+  <link rel="stylesheet" href="css/menu.css" title="Color">
+  <link rel="stylesheet" href="css/dropdown.css" title="Color">
+  <link rel="stylesheet" href="css/sidebar.css" title="Color">
+  <link rel="stylesheet" href="css/6-faqs.css" title="Color">
+</head>
+
+<script>
+  function openSidebar() {
+    console.log('sidebar');
+    document.querySelector('.sidebar').classList.add('open');
+  }
+
+  function closeSidebar() {
+    console.log('sidebar');
+    document.querySelector('.sidebar').classList.remove('open');
+  }
+
+  function openDropdown() {
+    var dropdownContent = document.querySelector('.dropdown-content');
+    var svgIcon = document.querySelector('.arrow-svg');
+    var isOpen = dropdownContent.classList.contains('open');
+
+    if (isOpen) {
+      dropdownContent.classList.remove('open');
+      svgIcon.classList.remove('open');
+    } else {
+      dropdownContent.classList.add('open');
+      svgIcon.classList.add('open');
+    }
+  }
+
+  function _scrollTop() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  window.addEventListener('scroll', function (e) {
+    const arrow = document.querySelector('.arrow-up');
+    if (window.scrollY > 100) {
+      arrow.classList.add('visible');
+    } else {
+      arrow.classList.remove('visible');
+    }
+  });
+
+
+  //Script responsiveCards
+  function hideModal() {
+    const modal = document.querySelector('.modalResponsive');
+    modal.classList.remove('showResponsive');
+  }
+
+  function showModal(param1, param2, param3) {
+    const modal = document.querySelector('.modalResponsive');
+    document.querySelector('#imageResponsive').src = param1;
+    document.querySelector('#titleResponsive').innerHTML = param2;
+    document.querySelector('#descriptionResponsive').innerHTML = param3;
+    modal.classList.add('showResponsive');
+  }
+
+  function openFullscreen(elem) {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
+
+  function viewFullScreen() {
+    var img = document.querySelector('.imgModalResponsive');
+    openFullscreen(img);
+  }
+
+</script>
+
+<div class="overlay">
+
+  <body>
+    <div class="flex-container">
+      <div class="flex-container">
+        <div class="spacing-words">
+          <div class="spacing-divs">
+            Join us
+          </div>
+          <div class="spacing-divs">
+            Contact
+          </div>
+        </div>
+      </div>
+      <div class="spacing-divs">
+        Client portal
+      </div>
+    </div>
+
+    <header>
+      <img src="logo.png" class="logo">
+      <div>
+        <nav>
+          <ul>
+            <li><a class="menu" href="#">Menu</a></li>
+            <li class="hidden-bars">
+              <button class="open-button" onclick="openSidebar()">
+                <div class="column-bars-short"></div>
+                <div class="column-bars-long"></div>
+                <div class="column-bars-long"></div>
+                <div class="column-bars-short"></div>
+              </button>
+            </li>
+            <li><a href="#" class="underlined ">Calculator</a></li>
+
+            <div class="dropdown-container">
+              <button onclick="openDropdown()" class="dropdown-button">
+                <div class="flex-containers">
+                  <a href="#" class="underlined">Our cars
+                    <img src="arrow.svg" class="arrow-svg"></a>
+                </div>
+              </button>
+
+              <div class="dropdown-content">
+                <ul class="dropdown-menu">
+                  <li>Brands</li>
+                  <li>Fuel Types</li>
+                  <li>Automobile</li>
+                </ul>
+              </div>
+            </div>
+
+            <li><a href="#" class="underlined">Latest sales</a></li>
+            <li><a href="faqs.html" class="underlined">FAQS</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <div class="accordion accordion-flush shadow-sm p-3 mb-5 bg-white rounded" id="accordionFlushExample">
+
+      <div class="accordion-item">
+        <h3 class="prices-title" id="flush-headingOne">FAQS</h3>
+        <p class="paragraph-par">If you have any question, please don't hesitate in looking behind</p>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            How can I find out how much my car is worth?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Do you have a used car that you want to sell without losing money? In that case, surely you ask yourself
+              the question "how can I know how much my car is worth?" Canalcar second-hand car dealers make it easy for
+              you: we appraise your car with a free vehicle appraisal service.
+
+              You just have to enter a few details to appraise a car online and in a few minutes you will know what the
+              market value of a car is .</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            How much is my used car worth?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>In practice, there are several ways to answer the question of how much my second-hand car is worth? .
+              Because one thing is the market value and another is the market value of a car .</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            How much is my car worth according to GANVAM?
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>GANVAM is the National Association of Sellers, Repair and Spare Parts. GANVAM car valuation tables offer
+              valuation for all car models and versions. Therefore, to know how much my car is worth according to
+              GANVAM, you have to visit these tables. At Canalcar we carry out vehicle appraisals based on these tables
+              so that we can calculate the market value of a car .</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            How much is my car worth according to the Treasury?
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Hacienda has some car price tables. So if you are wondering how much my car is worth according to the
+              Treasury , you should know a few things. Because the market value of a car is calculated based on the
+              tables with amounts determined by this Ministry. These values ​​are published regularly updated in the
+              Official State Gazette (BOE). To establish the market value, it takes into account the age, make, model
+              and version of the used car.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            How much does it cost to transfer my car?
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>You decide to sell a used car and you already have answers to the question what is my car worth . How
+              much does it cost to transfer my car? Coming to Canalcar, it's free. We take care of all the procedures
+              for free. Unlike if you go to an agency, to which you will have to pay the paperwork. With Canalcar, you
+              also save yourself paying fees and taxes that you would have to pay if you decide to sell the car on your
+              own.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="sidebar">
+        <div class="align-sidebar">
+          <h1 class="title-sidebar">Mi contenido sidebar</h1>
+          <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross">
+            <img src="equis.svg" class="cross-closing">
+          </button>
+        </div>
+        <h3 class="title-sidebar-two">¿Dónde te gustaría viajar?</h3>
+        <div class="pic-align-sidebar">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMONGQfVHow7RkPgbi3ZFOmikTBgsy8F16Nw&usqp=CAU"
+            class="pic-sidebar">
+        </div>
+        <h4 class="scroll-sidebar">Haz scroll para ver más</h4>
+        <div class="pic-align-sidebar">
+          <img src="downArrow.svg">
+        </div>
+      </div>
+
+      <button onclick="_scrollTop()" class="arrow-up">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <svg version="1.1" width="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 493.472 493.472" style="enable-background:new 0 0 493.472 493.472;"
+          xml:space="preserve">
+          <g>
+            <g>
+              <path d="M246.738,0C110.69,0,0.01,110.692,0.01,246.732c0,136.064,110.68,246.74,246.728,246.74s246.724-110.676,246.724-246.74
+          C493.462,110.692,382.786,0,246.738,0z M361.094,296.68l-8.964,8.972c-2.02,2.012-5.564,2.012-7.576,0l-94.932-94.924
+          c-0.752-0.756-1.736-1.132-2.72-1.132s-1.976,0.376-2.732,1.132l-94.784,94.768c-2.004,1.996-5.548,1.996-7.56,0l-8.972-8.972
+          c-2.08-2.076-2.08-5.48,0-7.552l110.16-110.156c0.996-0.984,2.332-1.532,3.996-1.532c1.436,0,2.78,0.548,3.764,1.532
+          L361.09,289.128C363.174,291.212,363.174,294.604,361.094,296.68z" />
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+
+  </body>
+</div>
+
+</html>

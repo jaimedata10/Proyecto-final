@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
 </head>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -73,7 +72,6 @@
     }
   });
 
-
   //Script responsiveCards
   function hideModal() {
     const modal = document.querySelector('.modalResponsive');
@@ -82,20 +80,11 @@
 
   function showModal(param1, param2, param3) {
     const modal = document.querySelector('.modalResponsive');
-
-
     document.querySelector('#imageResponsive').src = param1;
     document.querySelector('#titleResponsive').innerHTML = param2;
     document.querySelector('#descriptionResponsive').innerHTML = param3;
-
-
-
     modal.classList.add('showResponsive');
-
   }
-
-
-
 
   function openFullscreen(elem) {
     if (elem.requestFullscreen) {
@@ -112,75 +101,67 @@
     openFullscreen(img);
   }
 
-
-
-
-
-
-
-
 </script>
 
 <div class="overlay">
 
   <body>
-    <div class="flex-container">
       <div class="flex-container">
-        <div class="spacing-words">
-          <div class="spacing-divs">
-            Join us
-          </div>
-          <div class="spacing-divs">
-            Contact
+        <div class="flex-container">
+          <div class="spacing-words">
+            <div class="spacing-divs">
+              Join us
+            </div>
+            <div class="spacing-divs">
+              Contact
+            </div>
           </div>
         </div>
+        <div class="spacing-divs">
+          Client portal
+        </div>
       </div>
-      <div class="spacing-divs">
-        Client portal
-      </div>
-    </div>
 
-    <header>
-      <img src="logo.png" class="logo">
-      <div>
-        <nav>
-          <ul>
-            <li><a class="menu" href="#">Menu</a></li>
-            <li class="hidden-bars">
-              <button class="open-button" onclick="openSidebar()">
-                <div class="column-bars-short"></div>
-                <div class="column-bars-long"></div>
-                <div class="column-bars-long"></div>
-                <div class="column-bars-short"></div>
-              </button>
-            </li>
-            <li><a href="#" class="underlined ">Calculator</a></li>
+      <header>
+        <img src="logo.png" class="logo">
+        <div>
+          <nav>
+            <ul>
+              <li><a class="menu" href="#">Menu</a></li>
+              <li class="hidden-bars">
+                <button class="open-button" onclick="openSidebar()">
+                  <div class="column-bars-short"></div>
+                  <div class="column-bars-long"></div>
+                  <div class="column-bars-long"></div>
+                  <div class="column-bars-short"></div>
+                </button>
+              </li>
+              <li><a href="#" class="underlined ">Calculator</a></li>
 
-            <div class="dropdown-container">
-              <button onclick="openDropdown()" class="dropdown-button">
-                <div class="flex-containers">
-                  <a href="#" class="underlined">Our cars
-                    <img src="arrow.svg" class="arrow-svg"></a>
+              <div class="dropdown-container">
+                <button onclick="openDropdown()" class="dropdown-button">
+                  <div class="flex-containers">
+                    <a href="#" class="underlined">Our cars
+                      <img src="arrow.svg" class="arrow-svg"></a>
+                  </div>
+                </button>
+
+                <div class="dropdown-content">
+                  <ul class="dropdown-menu">
+                    <li>Brands</li>
+                    <li>Fuel Types</li>
+                    <li>Automobile</li>
+                  </ul>
                 </div>
-              </button>
-
-              <div class="dropdown-content">
-                <ul class="dropdown-menu">
-                  <li>Brands</li>
-                  <li>Fuel Types</li>
-                  <li>Automobile</li>
-                </ul>
               </div>
-            </div>
 
-
-            <li><a href="#" class="underlined">Latest sales</a></li>
-            <li><a href="#" class="underlined">FAQS</a></li>
-          </ul>
-        </nav>
-      </div>
-
-    </header>
+              <li><a href="#" class="underlined">Latest sales</a></li>
+              <li><a href="faqs.html" class="underlined">FAQS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+   
 
     <main>
       <div class="webdesign-container">
@@ -270,8 +251,6 @@
       </svg>
 
     </button>
-
-
 </div>
 
 
@@ -382,7 +361,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
   <div class="pack-containers">
@@ -390,7 +368,6 @@
       <div>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnqfcdsx57lvvh8oEakvuuTTnlSJajmdjfg&usqp=CAU"
           alt="" width="100%" height="157px">
-
       </div>
 
       <div class="stars">
@@ -458,7 +435,6 @@
       <div>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNrbQqHiZ0fzaJER5-xIPR4OR7xCXisCY1Tg&usqp=CAU"
           alt="" width="100%" height="157px">
-
       </div>
 
       <div class="stars">
@@ -514,7 +490,6 @@
         <div>
           <button class="book">Book</button>
         </div>
-
         <div>
           <button class="cancel">Cancel</button>
         </div>
@@ -522,7 +497,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="thirdSection">
 
@@ -553,10 +527,7 @@
           </svg>
         </div>
       </div>
-
-
     </div>
-
   </div>
 
   <div class="modalResponsive">
@@ -574,18 +545,11 @@
       </button>
     </div>
   </div>
-
-
-
 </div>
 
-
-
 <div class="fourthSection">
-
   <div class="center-div">
     <div class="title-section">¿Qué opinan nuestros usuarios?</div>
-
     <div class="flex-cards">
       <div class="center-card">
         <div class="title-card">Ofrecen lo que prometen</div>
@@ -596,7 +560,6 @@
         </div>
         <div class="review-card">Manuel Jiménez</div>
       </div>
-
 
       <div class="center-card">
         <div class="title-card">Muy buena experiencia</div>
@@ -617,14 +580,9 @@
         </div>
         <div class="review-card">Batiste Ramírez</div>
       </div>
-
     </div>
   </div>
-
-
-
 </div>
-
 
 </body>
 

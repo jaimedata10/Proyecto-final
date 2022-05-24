@@ -1,0 +1,61 @@
+.accordion {
+    margin: 60px 30%;
+}
+
+.accordion-collapse:hover {
+    background-color: rgb(245, 242, 242) !important;
+}
+
+body {
+    margin: 0;
+    background: url("https://wallpaperaccess.com/full/1079100.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+
+.overlay {
+    height: 2000px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.containe-r {
+    margin: 50px 30%;
+}
+
+.prices-title {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #000;
+}
+
+.paragraph-par {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.accordion-button.collapsed::after {
+    background-image: url("https://img.icons8.com/material-outlined/344/plus-math--v1.png");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("https://img.icons8.com/ios-filled/344/horizontal-line.png");
+}
+
+@media (max-width: 750px) {
+    .containe-r {
+        margin: 200px 5%;
+    }
+}
+
