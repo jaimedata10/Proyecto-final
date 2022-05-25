@@ -1,5 +1,5 @@
 .accordion {
-    margin: 60px 30%;
+    margin: 150px 30%;
 }
 
 .accordion-collapse:hover {
@@ -52,6 +52,14 @@ body {
 .accordion-button:not(.collapsed)::after {
     background-image: url("https://img.icons8.com/ios-filled/344/horizontal-line.png");
 }
+
+.header-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    box-shadow: 0px 6px 5px -6px rgb(0 0 0 / 75%);
+    background: linear-gradient(to bottom, black, white);
+};
 
 @media (max-width: 750px) {
     .containe-r {
