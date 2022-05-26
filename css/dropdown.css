@@ -48,4 +48,5 @@
 .dropdown-button {
     background: transparent;
     border: none;
+    height: 100%;
 }

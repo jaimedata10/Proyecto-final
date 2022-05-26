@@ -80,10 +80,10 @@ ul {
     margin-top: 0px;
 }
 
-a {
+.refs {
     width: 105px;
     height: 85px;
-    display: flex;
+    display: inline;
     align-items: center;
     justify-content: center;
     position: relative;
