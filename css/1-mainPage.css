@@ -204,20 +204,12 @@ img.logo {
     margin-left: 2%;
 }
 
-.carousel {
-    height: 355px; 
-    margin-left: 100px;
-}
+
 
 .carousel-control-next, .carousel-control-prev {
-    margin-right: 32px;
-    top: 253px;
+    height: auto;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 30px;
-    height: 30px;
-}
 
 
 /* Creación media queries: */
@@ -311,3 +303,16 @@ img.logo {
     box-shadow: 0px 6px 5px -6px rgb(0 0 0 / 75%);
     background: linear-gradient(to bottom, black, white);
 };
+
+
+
+
+
+
+
+
+
+.redContenedor{
+    background-color: red;
+    width: 100%;
+}
