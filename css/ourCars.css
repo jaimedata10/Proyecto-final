@@ -1,0 +1,27 @@
+.main-ourCars{
+    padding-top: 115px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: lightgreen;
+}
+
+.cards-ourCars{
+    height: 185px;
+    width: 200px;
+    margin: 15px 30px;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(151, 149, 149);
+
+    transition: background-color .1s;
+    cursor: pointer;
+}
+
+.cards-ourCars:hover{
+    background-color: rgb(136, 133, 133);
+}
+
