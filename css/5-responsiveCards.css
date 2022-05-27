@@ -121,7 +121,7 @@
 .imgModalResponsive {
     height: auto;
     width: auto;
-    max-height: 60vh;
+    max-height: 50vh;
     padding: 0;
 }
 
@@ -149,6 +149,7 @@
 }
 
 .showResponsive {
+    margin-top: 6%;
     visibility: visible;
     opacity: 1;
 }
