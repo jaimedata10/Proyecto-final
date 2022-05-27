@@ -100,64 +100,80 @@
   <body>
 
     <div class="header-fixed">
-    <div class="flex-container">
+
       <div class="flex-container">
-        <div class="spacing-words">
-          <div class="spacing-divs">
-            Join us
-          </div>
-          <div class="spacing-divs">
-            Contact
+        <div class="flex-container">
+          <div class="spacing-words">
+            <div class="spacing-divs">
+              Join us
+            </div>
+            <div class="spacing-divs">
+              Contact
+            </div>
           </div>
         </div>
+        <div class="spacing-divs">
+          Client portal
+        </div>
       </div>
-      <div class="spacing-divs">
-        Client portal
-      </div>
+
+      <header>
+        <img src="logo.png" class="logo">
+        <div>
+          <nav>
+            <ul>
+              <li><a class="menu" href="#">
+                  <div class="refs">Menu</div>
+                </a></li>
+              <li class="hidden-bars">
+                <button class="open-button" onclick="openSidebar()">
+                  <div class="column-bars-short"></div>
+                  <div class="column-bars-long"></div>
+                  <div class="column-bars-long"></div>
+                  <div class="column-bars-short"></div>
+                </button>
+              </li>
+              <li><a href="#" class="underlined ">
+                  <div class="refs">Calculator</div>
+                </a></li>
+
+              <div class="dropdown-container">
+                <button onclick="openDropdown()" class="dropdown-button">
+                  <div class="flex-containers">
+                    <a href="#" class="underlined">
+                      <div class="refs">Our cars</div>
+                      <img src="arrow.svg" class="arrow-svg">
+                    </a>
+                  </div>
+                </button>
+
+                <div class="dropdown-content">
+                  <ul class="dropdown-menu">
+                    <li>Brands</li>
+                    <li>Fuel Types</li>
+                    <li>Automobile</li>
+                  </ul>
+                </div>
+              </div>
+
+              <li><a href="#" class="underlined">
+                  <div class="refs">Latest sales</div>
+                </a></li>
+              <li><a href="faqs.html" class="underlined">
+                  <div class="refs">FAQS</div>
+                </a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
     </div>
 
-    <header>
-      <img src="logo.png" class="logo">
-      <div>
-        <nav>
-          <ul>
-            <li><a class="menu" href="#">Menu</a></li>
-            <li class="hidden-bars">
-              <button class="open-button" onclick="openSidebar()">
-                <div class="column-bars-short"></div>
-                <div class="column-bars-long"></div>
-                <div class="column-bars-long"></div>
-                <div class="column-bars-short"></div>
-              </button>
-            </li>
-            <li><a href="#" class="underlined ">Calculator</a></li>
 
-            <div class="dropdown-container">
-              <button onclick="openDropdown()" class="dropdown-button">
-                <div class="flex-containers">
-                  <a href="#" class="underlined">Our cars
-                    <img src="arrow.svg" class="arrow-svg"></a>
-                </div>
-              </button>
+ 
 
-              <div class="dropdown-content">
-                <ul class="dropdown-menu">
-                  <li>Brands</li>
-                  <li>Fuel Types</li>
-                  <li>Automobile</li>
-                </ul>
-              </div>
-            </div>
 
-            <li><a href="#" class="underlined">Latest sales</a></li>
-            <li><a href="faqs.html" class="underlined">FAQS</a></li>
-          </ul>
-        </nav>
-      </div>
-
-    </header>
-
-  </div>
 
     <div class="accordion accordion-flush shadow-sm p-3 mb-5 bg-white rounded" id="accordionFlushExample">
 
