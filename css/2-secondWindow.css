@@ -1,31 +1,54 @@
-
 .secondSection {
-    height: 1600px;
+    height: 100vh;
     background-color: rgb(249, 238, 224);
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .pack-containers {
     display: flex;
-   justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .container-cities {
-    margin-top: 100px;
-    width: 250px;
-    height: 550px;
-    border: 2px solid #a9a4a4;
-    border-radius: 5px;
-    background-color: rgb(233, 239, 246);
+    display: flex;
+    border-collapse: collapse;
+    display: inline-block;
+    justify-content: space-around;
+    position: relative;
+    border: 3px solid #df001b;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 
 .second-window-title {
-   text-align: center;
+    text-align: center;
     color: rgb(61, 59, 59);
     font-size: 60px;
     font-family: "Playfair Display", Georgia, serif;
-    margin-top: 16px;
+    margin-top: 2%;
+    margin-bottom: 7%;
 }
+
+
+.cards-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.paragraph-style-profile {
+    margin-top: 10%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
 
 /*
 img {
