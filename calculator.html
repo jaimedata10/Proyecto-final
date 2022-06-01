@@ -28,7 +28,6 @@
 <link rel="stylesheet" href="css/sidebar.css" title="Color">
 <link rel="stylesheet" href="css/3-thirdWindow.css" title="Color">
 <link rel="stylesheet" href="css/4-fourthWindow.css" title="Color">
-<link rel="stylesheet" href="css/5-responsiveCards.css" title="Color">
 <link rel="stylesheet" href="css/Footer.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 <link rel="stylesheet" href="css/calculator.css">
@@ -250,73 +249,102 @@
 </div>
 
 <div class="calculatorSection">
-    <div class="second-window-title">Calculate your loan</div>
-    <div class="pack-containers">
-        
-    <table>
+  <div class="third-window-title">Calculate your financial offer</div>
 
+
+  <div class="two-cards">
+
+    <div class="card-calculate">
+
+
+      <div class="tdTittle">Financial calculator</div>
+
+      <table>
+
+  
+        <tr class="trDivider">
+          <td class="ColumnTitle">Price</td>
+          <td> <input type="number" id="row1_ev1"  min="5000" max="100000" placeholder="5000"></td>
+        </tr>
+  
         <tr>
-            <td><b>Alumno</b></td>
-            <td><b>Ev 1</b></td>
-            <td><b>Ev 2</b></td>
-            <td><b>Ev 3</b></td>
-            <td><b>Nota media</b></td>
+        </tr>
+  
+        <tr class="trDivider">
+          <td class="ColumnTitle">Entrance</td>
+          <td> <input type="number" id="row1_ev2"  min="1000" max="10000" placeholder="1000"></td>
+  
+        </tr>
+  
+        <tr class="trDivider">
+          <td class="ColumnTitle">Months</td>
+            <td> 
+                <select class="mySelect" name="month" id="row1_ev3">
+
+                  <option value="24">24</option>
+
+                  <option value="36">36</option>
+            
+                  <option value="48">48</option>
+
+                  <option value="60">60</option>
+                </select>
+            </td>
+                        
+          
+          </td>
         </tr>
 
-        <tr>
-            <td>Juan Rodriguez</td>
-            <td> <input type="number" id="row1_ev1" min="0" max="10"></td>
-            <td> <input type="number" id="row1_ev2" min="0" max="10"></td>
-            <td> <input type="number" id="row1_ev3" min="0" max="10"></td>
-            <td> <button onclick="myMedia(getElementById('row1_ev1').value, getElementById('row1_ev2').value, getElementById('row1_ev3').value,1)">Calcular media</button></td>
-           <td><div id="promedio1"></div></td> 
+        <tr class="trDivider">
+          <td class="ColumnTitle">A.P.R</td>
+          <td> <input class="inputAPR" readonly="readonly" id="row1_ev4" placeholder="7,00%"> </td>
+  
         </tr>
-
-        <tr>
-            <td>Ana Garcia</td>
-            <td> <input type="number" id="row2_ev1" min="0" max="10"></td>
-            <td> <input type="number" id="row2_ev2" min="0" max="10"></td>
-            <td> <input type="number" id="row2_ev3" min="0" max="10"></td>
-            <td> <button onclick="myMedia(getElementById('row2_ev1').value,getElementById('row2_ev2').value,getElementById('row2_ev3').value,2)">Calcular media</button></td>
-            <td><div id="promedio2"></div></td> 
-
-        </tr>
-
-        <tr>
-            <td>Ruben Gomez</td>
-            <td> <input type="number" id="row3_ev1" min="0" max="10"></td>
-            <td> <input type="number" id="row3_ev2" min="0" max="10"></td>
-            <td> <input type="number" id="row3_ev3" min="0" max="10"></td>
-            <td> <button onclick="myMedia(getElementById('row3_ev1').value,getElementById('row3_ev2').value,getElementById('row3_ev3').value,3)">Calcular media</button></td>
-            <td><div id="promedio3"></div></td> 
-
-        </tr>
-
-        <tr>
-            <td>Alfredo Esteban</td>
-            <td> <input type="number" id="row4_ev1" min="0" max="10"></td>
-            <td> <input type="number" id="row4_ev2" min="0" max="10"></td>
-            <td> <input type="number" id="row4_ev3" min="0" max="10"></td>
-            <td> <button onclick="myMedia(getElementById('row4_ev1').value,getElementById('row4_ev2').value,getElementById('row4_ev3').value,4)">Calcular media</button></td>
-            <td><div id="promedio4"></div></td> 
-
-        </tr>
-
-        <tr>
-            <td>Lara Ruiz</td>
-            <td> <input type="number" id="row5_ev1" min="0" max="10"></td>
-            <td> <input type="number" id="row5_ev2" min="0" max="10"></td>
-            <td> <input type="number" id="row5_ev3" min="0" max="10"></td>
-            <td> <button onclick="myMedia(getElementById('row5_ev1').value,getElementById('row5_ev2').value,getElementById('row5_ev3').value,5)">Calcular media</button></td>
-            <td><div id="promedio5"></div></td> 
-
-        </tr>
-    </table>
-
+  
     
-      
+      </table>
+  
+  
+  
     </div>
+  
+  
+    <div class="card-calculate-final-price">
+      <td> <button
+        onclick="myMedia(getElementById('row1_ev1').value, getElementById('row1_ev2').value, 
+        getElementById('row1_ev3').value , getElementById('row1_ev4').value, 1)">
+        Calcular media</button>
+        <span id="demo"></span>
+      </td>
+
+      <div class="pruebas">
+
+          <div class="pruebaAPR">
+            <div class="TextVarJoin">Final price of your vehicule: <div class="separateResult"  id="Prize"></div>  </div>
+
+          </div>
+
+          <div class="pruebaAPR">
+            <div class="TextVarJoin" >Entrance: <div class="separateResult" id="Entrance" > </div>    </div>
+
+          </div>
+
+          <div class="pruebaAPR">
+            <div class="TextVarJoin"> Monthly Quantity: <div class="separateResult" id="Months"> </div></div>
+          </div>
+
+          <div class="pruebaAPR">
+            <div class="TextVarJoin">Final price with A.P.R: <div class="separateResult"  id="resultadoFinal">  </div>    </div>
+          </div>
+          
+      
+      </div>
+  
+    </div>
+
   </div>
+  
+</div>
 
 
 
@@ -344,7 +372,7 @@
     </div>
 
     <div class="cards-containers">
-      <img src="" class="container-cities" >
+      <img src="" class="container-cities">
       <p class="paragraph-style-profile">Ignacio Moreno Fernández</p>
     </div>
   </div>
