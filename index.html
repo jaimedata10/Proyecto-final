@@ -33,48 +33,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 
-<script>
-  function openSidebar() {
-    console.log('sidebar');
-    document.querySelector('.sidebar').classList.add('open');
-  }
-
-  function closeSidebar() {
-    console.log('sidebar');
-    document.querySelector('.sidebar').classList.remove('open');
-  }
-
-  function openDropdown() {
-    var dropdownContent = document.querySelector('.dropdown-content');
-    var svgIcon = document.querySelector('.arrow-svg');
-    var isOpen = dropdownContent.classList.contains('open');
-
-    if (isOpen) {
-      dropdownContent.classList.remove('open');
-      svgIcon.classList.remove('open');
-    } else {
-      dropdownContent.classList.add('open');
-      svgIcon.classList.add('open');
-    }
-  }
-
-  function _scrollTop() {
-    window.scroll({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-
-  window.addEventListener('scroll', function (e) {
-    const arrow = document.querySelector('.arrow-up');
-    if (window.scrollY > 100) {
-      arrow.classList.add('visible');
-    } else {
-      arrow.classList.remove('visible');
-    }
-  });
-
-</script>
+<script src="JS/mainPage.js"></script>
 
 <div class="overlay">
 
@@ -152,7 +111,7 @@
     </div>
 
 
- 
+
 
 
 
@@ -166,8 +125,7 @@
                 <img class="d-block w-100" src="picPrincipal.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100"
-                  src="entregaLlaves.jpg">
+                <img class="d-block w-100" src="entregaLlaves.jpg">
               </div>
               <div class="carousel-item">
                 <video autoplay loop muted id="player" width="100%" height="100%">
@@ -187,16 +145,17 @@
         </div>
       </div>
 
-        
+
       <div class="absolute-paragraph">
         <div class="paragraph-description">
-        <p class="padmar">JIMA car dealership was founded in 2020 with two principles: sell a good product at a fair price and give
-          good service. Since then, thousands of customers have decided to buy their car at our dealership. Thanks
-          to their trust we continue to be the market leader in car sales. Our good work and the satisfaction of our
-          customers have made us the largest car dealer in the world. Stop looking for more dealerships, JIMA is
-          one of the companies with more history and reputation among car dealers nationwide.
-        </p>
-      </div>
+          <p class="padmar">JIMA car dealership was founded in 2020 with two principles: sell a good product at a fair
+            price and give
+            good service. Since then, thousands of customers have decided to buy their car at our dealership. Thanks
+            to their trust we continue to be the market leader in car sales. Our good work and the satisfaction of our
+            customers have made us the largest car dealer in the world. Stop looking for more dealerships, JIMA is
+            one of the companies with more history and reputation among car dealers nationwide.
+          </p>
+        </div>
       </div>
 
 
