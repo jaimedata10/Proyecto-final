@@ -1,4 +1,3 @@
-
   //Script responsiveCards
   function hideModal() {
     const modal = document.querySelector('.modalResponsive');
@@ -27,3 +26,16 @@
     var img = document.querySelector('.imgModalResponsive');
     openFullscreen(img);
   }
+
+
+document.addEventListener('click', function(e) {
+  const clickedPaths = e.path; 
+  const button = document.querySelector('.dropdown-button');
+  const dropdownContent = document.querySelector('.dropdown-content');
+  var svgIcon = document.querySelector('.arrow-svg');
+  
+  if(!clickedPaths.includes(dropdownContent) && e.target !== button && !clickedPaths.includes(button)) {
+    dropdownContent.classList.remove('open');
+    svgIcon.classList.remove('open');
+  }
+})
