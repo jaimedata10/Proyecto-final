@@ -28,53 +28,11 @@
 <link rel="stylesheet" href="css/sidebar.css" title="Color">
 <link rel="stylesheet" href="css/3-thirdWindow.css" title="Color">
 <link rel="stylesheet" href="css/4-fourthWindow.css" title="Color">
-<link rel="stylesheet" href="css/5-responsiveCards.css" title="Color">
 <link rel="stylesheet" href="css/Footer.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 
-<script>
-  function openSidebar() {
-    console.log('sidebar');
-    document.querySelector('.sidebar').classList.add('open');
-  }
-
-  function closeSidebar() {
-    console.log('sidebar');
-    document.querySelector('.sidebar').classList.remove('open');
-  }
-
-  function openDropdown() {
-    var dropdownContent = document.querySelector('.dropdown-content');
-    var svgIcon = document.querySelector('.arrow-svg');
-    var isOpen = dropdownContent.classList.contains('open');
-
-    if (isOpen) {
-      dropdownContent.classList.remove('open');
-      svgIcon.classList.remove('open');
-    } else {
-      dropdownContent.classList.add('open');
-      svgIcon.classList.add('open');
-    }
-  }
-
-  function _scrollTop() {
-    window.scroll({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-
-  window.addEventListener('scroll', function (e) {
-    const arrow = document.querySelector('.arrow-up');
-    if (window.scrollY > 100) {
-      arrow.classList.add('visible');
-    } else {
-      arrow.classList.remove('visible');
-    }
-  });
-
-</script>
+<script src="JS/mainPage.js"></script>
 
 <div class="overlay">
 
@@ -119,7 +77,7 @@
                   <div class="refs">About us</div>
                 </a></li>
 
-              <li><a href="#" class="underlined ">
+              <li><a href="calculator.html" class="underlined ">
                   <div class="refs">Calculator</div>
                 </a></li>
 
@@ -281,6 +239,225 @@
     </div>
   </div>
 
+  <div class="cardsCointainerResponsive">
+    <div class="cardsResponsive">
+      <div class=" allImageResponsive">
+        <img class="myImgResponsive" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt=""
+          id="imagen1">
+        <div class="overlayResponsive">
+          <button class="myButtonResponsive"
+            onclick="showModal('https://images.unsplash.com/photo-1524758631624-e2822e304c36', 'Imagen1', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit variuslorem, in feugiat eros auctor vel. Ut non erat in nisl elementum pellentesque')">
+            <h3 class="textHoverResponsive">Ver Imagen</h3>
+          </button>
+        </div>
+      </div>
+
+      <div class="bottomCardResponsive">
+        <div>
+          <h2 class="cardsTitleResponsive">Card title</h2>
+          <p class="paragraphResponsive">Image from unsplash.com</p>
+        </div>
+
+        <div class="IconResponsive">
+          <svg class="mySvgResponsive" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+            class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cardsCointainerResponsive">
+    <div class="cardsResponsive">
+      <div class=" allImageResponsive">
+        <img class="myImgResponsive" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt=""
+          id="imagen1">
+        <div class="overlayResponsive">
+          <button class="myButtonResponsive"
+            onclick="showModal('https://images.unsplash.com/photo-1524758631624-e2822e304c36', 'Imagen1', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit variuslorem, in feugiat eros auctor vel. Ut non erat in nisl elementum pellentesque')">
+            <h3 class="textHoverResponsive">Ver Imagen</h3>
+          </button>
+        </div>
+      </div>
+
+      <div class="bottomCardResponsive">
+        <div>
+          <h2 class="cardsTitleResponsive">Card title</h2>
+          <p class="paragraphResponsive">Image from unsplash.com</p>
+        </div>
+
+        <div class="IconResponsive">
+          <svg class="mySvgResponsive" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+            class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cardsCointainerResponsive">
+    <div class="cardsResponsive">
+      <div class=" allImageResponsive">
+        <img class="myImgResponsive" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt=""
+          id="imagen1">
+        <div class="overlayResponsive">
+          <button class="myButtonResponsive"
+            onclick="showModal('https://images.unsplash.com/photo-1524758631624-e2822e304c36', 'Imagen1', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit variuslorem, in feugiat eros auctor vel. Ut non erat in nisl elementum pellentesque')">
+            <h3 class="textHoverResponsive">Ver Imagen</h3>
+          </button>
+        </div>
+      </div>
+
+      <div class="bottomCardResponsive">
+        <div>
+          <h2 class="cardsTitleResponsive">Card title</h2>
+          <p class="paragraphResponsive">Image from unsplash.com</p>
+        </div>
+
+        <div class="IconResponsive">
+          <svg class="mySvgResponsive" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+            class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="cardsCointainerResponsive">
+    <div class="cardsResponsive">
+      <div class=" allImageResponsive">
+        <img class="myImgResponsive" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt=""
+          id="imagen1">
+        <div class="overlayResponsive">
+          <button class="myButtonResponsive"
+            onclick="showModal('https://images.unsplash.com/photo-1524758631624-e2822e304c36', 'Imagen1', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit variuslorem, in feugiat eros auctor vel. Ut non erat in nisl elementum pellentesque')">
+            <h3 class="textHoverResponsive">Ver Imagen</h3>
+          </button>
+        </div>
+      </div>
+
+      <div class="bottomCardResponsive">
+        <div>
+          <h2 class="cardsTitleResponsive">Card title</h2>
+          <p class="paragraphResponsive">Image from unsplash.com</p>
+        </div>
+
+        <div class="IconResponsive">
+          <svg class="mySvgResponsive" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+            class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="cardsCointainerResponsive">
+    <div class="cardsResponsive">
+      <div class=" allImageResponsive">
+        <img class="myImgResponsive" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt=""
+          id="imagen1">
+        <div class="overlayResponsive">
+          <button class="myButtonResponsive"
+            onclick="showModal('https://images.unsplash.com/photo-1524758631624-e2822e304c36', 'Imagen1', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit variuslorem, in feugiat eros auctor vel. Ut non erat in nisl elementum pellentesque')">
+            <h3 class="textHoverResponsive">Ver Imagen</h3>
+          </button>
+        </div>
+      </div>
+
+      <div class="bottomCardResponsive">
+        <div>
+          <h2 class="cardsTitleResponsive">Card title</h2>
+          <p class="paragraphResponsive">Image from unsplash.com</p>
+        </div>
+
+        <div class="IconResponsive">
+          <svg class="mySvgResponsive" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+            class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="cardsCointainerResponsive">
+    <div class="cardsResponsive">
+      <div class=" allImageResponsive">
+        <img class="myImgResponsive" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt=""
+          id="imagen1">
+        <div class="overlayResponsive">
+          <button class="myButtonResponsive"
+            onclick="showModal('https://images.unsplash.com/photo-1524758631624-e2822e304c36', 'Imagen1', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit variuslorem, in feugiat eros auctor vel. Ut non erat in nisl elementum pellentesque')">
+            <h3 class="textHoverResponsive">Ver Imagen</h3>
+          </button>
+        </div>
+      </div>
+
+      <div class="bottomCardResponsive">
+        <div>
+          <h2 class="cardsTitleResponsive">Card title</h2>
+          <p class="paragraphResponsive">Image from unsplash.com</p>
+        </div>
+
+        <div class="IconResponsive">
+          <svg class="mySvgResponsive" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+            class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="cardsCointainerResponsive">
+    <div class="cardsResponsive">
+      <div class=" allImageResponsive">
+        <img class="myImgResponsive" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt=""
+          id="imagen1">
+        <div class="overlayResponsive">
+          <button class="myButtonResponsive"
+            onclick="showModal('https://images.unsplash.com/photo-1524758631624-e2822e304c36', 'Imagen1', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit variuslorem, in feugiat eros auctor vel. Ut non erat in nisl elementum pellentesque')">
+            <h3 class="textHoverResponsive">Ver Imagen</h3>
+          </button>
+        </div>
+      </div>
+
+      <div class="bottomCardResponsive">
+        <div>
+          <h2 class="cardsTitleResponsive">Card title</h2>
+          <p class="paragraphResponsive">Image from unsplash.com</p>
+        </div>
+
+        <div class="IconResponsive">
+          <svg class="mySvgResponsive" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor"
+            class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+
   <div class="modalResponsive">
     <div class="contentResponsive">
       <img id="imageResponsive" class="imgModalResponsive">
@@ -357,7 +534,7 @@
     </div>
 
     <div class="cards-containers">
-      <img src="" class="container-cities" >
+      <img src="foto nacho.jpg" class="container-cities" >
       <p class="paragraph-style-profile">Ignacio Moreno Fernández</p>
     </div>
   </div>
