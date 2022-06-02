@@ -297,30 +297,35 @@
 
         <tr class="trDivider">
           <td class="ColumnTitle">A.P.R</td>
-          <td> <input class="inputAPR" readonly="readonly" id="row1_ev4" placeholder="7,00%"> </td>
+          <td class="tdInput"> <input class="inputAPR" readonly="readonly" id="row1_ev4" placeholder="7,00%"> </td>
+
+          <td> <button class="myButtonCalculator"
+            onclick="myMedia(getElementById('row1_ev1').value, getElementById('row1_ev2').value, 
+            getElementById('row1_ev3').value , getElementById('row1_ev4').value, 1)">
+            Calculate</button>
+          </td>
   
         </tr>
-  
+        
+
     
       </table>
   
-  
+      <span class="demo" id="demo"></span>
+
   
     </div>
   
   
     <div class="card-calculate-final-price">
-      <td> <button
-        onclick="myMedia(getElementById('row1_ev1').value, getElementById('row1_ev2').value, 
-        getElementById('row1_ev3').value , getElementById('row1_ev4').value, 1)">
-        Calcular media</button>
-        <span id="demo"></span>
-      </td>
+      
 
       <div class="pruebas">
 
           <div class="pruebaAPR">
-            <div class="TextVarJoin">Final price of your vehicule: <div class="separateResult"  id="Prize"></div>  </div>
+            <div class="TextVarJoin">Final price of your vehicule:
+               <div class="separateResult"  id="Prize"></div>
+            </div>
 
           </div>
 
@@ -336,7 +341,7 @@
           <div class="pruebaAPR">
             <div class="TextVarJoin">Final price with A.P.R: <div class="separateResult"  id="resultadoFinal">  </div>    </div>
           </div>
-          
+
       
       </div>
   

@@ -52,7 +52,7 @@ return '';
 
 
         if ( Price ==="" || Entrance ==="" || Months ==="" ) { 
-            document.getElementById("demo").innerHTML = "Todos los campos son obligatorios";
+            document.getElementById("demo").innerHTML = "All fields are mandatory";
             return false
         }
         else { 
@@ -61,10 +61,10 @@ return '';
             
             if(cont==1){
 
-                document.getElementById("resultadoFinal").innerHTML = sumaDivide;
-                document.getElementById("Prize").innerHTML= Price;
-                document.getElementById("Entrance").innerHTML = Entrance;
-                document.getElementById("Months").innerHTML = Months;
+                document.getElementById("resultadoFinal").innerHTML = `${sumaDivide}€`;
+                document.getElementById("Prize").innerHTML= `${Price}€`;
+                document.getElementById("Entrance").innerHTML =  `${Entrance}€`;
+                document.getElementById("Months").innerHTML = `${Months}`;
                 
             }
 

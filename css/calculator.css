@@ -49,17 +49,17 @@
 
 
 input{
-    width: 96%;
+    width: 134%;
     height: 33%;
 }
 
 .inputAPR{
-    width: 24%;
+    width: 36%;
     height: 33%;
 }
 
 .mySelect{
-    width: 96%;
+    width: 134%;
     height: 33%;
 }
 
@@ -91,7 +91,7 @@ input{
 table{
     border-collapse:initial;
     height: 80%;
-    margin-left: 5%;
+    margin-left: 16%;
 }
 
 
@@ -131,5 +131,20 @@ margin-bottom: 1%;
 
 .pruebas{
     margin-left: 5%;
+    margin-top: 2%;
 }
 
+.demo{
+    color:red;
+    font-size: medium;
+    margin-left: 5%;
+}
+
+
+.tdInput{
+    width: 40%;
+}
+
+.myButtonCalculator{
+    margin-left: -30px;
+}
