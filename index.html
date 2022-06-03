@@ -3,6 +3,8 @@
 
 <head>
 
+  <title>JIMA</title>
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +30,6 @@
 <link rel="stylesheet" href="css/sidebar.css" title="Color">
 <link rel="stylesheet" href="css/3-thirdWindow.css" title="Color">
 <link rel="stylesheet" href="css/4-fourthWindow.css" title="Color">
-<link rel="stylesheet" href="css/5-responsiveCards.css" title="Color">
 <link rel="stylesheet" href="css/Footer.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
@@ -74,16 +75,16 @@
                 </button>
               </li>
 
-              <li><a href="" class="underlined ">
+              <li><a href="index.html#aboutus-id" class="underlined ">
                   <div class="refs">About us</div>
                 </a></li>
 
-              <li><a href="calculator.html" class="underlined ">
+              <li><a href="calculator.html#calculator-id" class="underlined ">
                   <div class="refs">Calculator</div>
                 </a></li>
 
               <div class="dropdown-container">
-                <button onclick="openDropdown()" class="dropdown-button">
+                <button onclick="openDropdown()" class="dropdown-button" id="arrow-button">
                   <div class="flex-containers">
                     <a href="#" class="underlined">
                       <div class="refs">Our cars</div>
@@ -92,9 +93,9 @@
                   </div>
                 </button>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="arrow-dropdown">
                   <ul class="dropdown-menu">
-                    <li>Automobiles</li>
+                    <li>Cars</li>
                     <li>Motorbikes</li>
                   </ul>
                 </div>
@@ -515,8 +516,8 @@
 
 
 
-<div class="secondSection">
-  <div class="second-window-title">Who we are?</div>
+<div class="secondSection" id="aboutus-id">
+  <div class="second-window-title">Meet our team</div>
   <div class="pack-containers">
 
     <div class="cards-containers">
@@ -539,6 +540,27 @@
       <p class="paragraph-style-profile">Ignacio Moreno Fernández</p>
     </div>
   </div>
+  <div class="pack-containers-info">
+
+    <div class="cards-containers-info">
+      <div class="info-text">Fundador y desarrollador</div>
+    </div>
+
+    <div class="cards-containers-info">
+      
+      <div class="info-text">Fundador y desarrollador</div>
+    </div>
+
+    <div class="cards-containers-info">
+      
+     <div class="info-text"> Fundador y desarrollador</div>
+    </div>
+
+    <div class="cards-containers-info">
+      
+      <div class="info-text">Fundador y desarrollador</div>
+    </div>
+  </div>
 </div>
 
 
@@ -559,11 +581,11 @@
     </div>
     <div class="middle box">
       <div class="topic">OUR SERVICES</div>
-      <div><a href="#">Calculator</a></div>
-      <div><a href="#">Automobiles</a></div>
+      <div><a href="calculator.html#calculator-id">Calculator</a></div>
+      <div><a href="#">Cars</a></div>
       <div><a href="#">Motorbikes</a></div>
       <div><a href="#">Latest Sales</a></div>
-      <div><a href="#">FAQS</a></div>
+      <div><a href="faqs.html">FAQS</a></div>
 
     </div>
     <div class="right box">
@@ -572,11 +594,11 @@
         <input type="text" placeholder="Enter email address">
         <input type="submit" name="" value="Send">
         <div class="media-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </form>
       <div class="lower">
@@ -592,6 +614,7 @@
   </div>
 
 </footer>
+
 
 
 <script src="JS/responsiveCards.js"></script>

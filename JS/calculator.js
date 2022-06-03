@@ -1,43 +1,56 @@
-function myMedia( x,  y, z, cont) {
-var x, y, z, sumaTotal,cont;
-sumaTotal =(parseFloat(x)+parseFloat(y)+parseFloat(z))/3;
 
-if(isNaN(sumaTotal)){
-sumaTotal= '';
-}
+function myMedia(Price, Entrance, Months, tae, cont) {
+    var Price, Entrance, Months, sumaTotal, sumaDivide, restaPriceEntrance, cont;
+    var tae = 0.07;
 
-if(x==''||y==''||z==''){
-alert('Rellena todos los campos')
-}
+    restaPriceEntrance = (parseFloat(Price) - parseFloat(Entrance));
+    sumaTotal = (((parseFloat(Price) - parseFloat(Entrance)) * tae)).toFixed(2);
+    sumaDivide = ((parseFloat(restaPriceEntrance) + parseFloat(sumaTotal)) / parseFloat(Months)).toFixed(2);
 
-if((x<0||x>10)||(y<0||y>10)||(z<0||z>10)){
-alert('Los numeros tienes que estar entre el 0 y el 10');
-return '';
-}
+    if (isNaN(sumaTotal)) {
+        sumaTotal = '';
+    }
+
+    if (isNaN(sumaDivide)) {
+        sumaDivide = '';
+    }
 
 
-if(cont==1){
-document.getElementById("promedio1").innerHTML= sumaTotal.toFixed(2);
+    if (Price === "" || Entrance === "" || Months === "") {
+        document.getElementById("demo").innerHTML = "All fields are mandatory";
+        return false
+    }
+    else {
+        document.getElementById("demo").innerHTML = "";
 
-}
-else if(cont==2){
-document.getElementById("promedio2").innerHTML = sumaTotal.toFixed(2);
+        if (cont == 1) {
 
-}
-else if(cont==3){
-document.getElementById("promedio3").innerHTML = sumaTotal.toFixed(2);
+            document.getElementById("resultadoFinal").innerHTML = `${sumaDivide}€`;
+            document.getElementById("Prize").innerHTML = `${Price}€`;
+            document.getElementById("Entrance").innerHTML = `${Entrance}€`;
+            document.getElementById("Months").innerHTML = `${Months}`;
+        }
 
-}
-else if(cont==4){
-document.getElementById("promedio4").innerHTML = sumaTotal.toFixed(2);
-
-}
-else{
-document.getElementById("promedio5").innerHTML = sumaTotal.toFixed(2);
-
-}
+        return false
+    }
 
 
 }
-    
-    
+
+
+function myClean(Price, Entrance, Months, tae, cont) {
+
+ 
+
+    if (cont == 2) {
+
+        document.getElementById("resultadoFinal").innerHTML = '';
+        document.getElementById("Prize").innerHTML = '';
+        document.getElementById("Entrance").innerHTML = '';
+        document.getElementById("Months").innerHTML = '';
+    }
+
+
+
+}
+

@@ -97,7 +97,6 @@ a:hover {
 
 li {
     list-style-type: none;
-    font-weight: 200;
 }
 
 .menu {
@@ -264,6 +263,7 @@ img.logo {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 125px;
     }
 
     .hidden-bars {

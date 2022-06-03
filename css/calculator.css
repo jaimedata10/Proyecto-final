@@ -2,4 +2,156 @@
     height: 100vh;
     background-color: rgb(229, 134, 2);
     padding-top: 50px;
+
+    
+
+}
+
+.card-calculate {
+    border-collapse: collapse;
+    width: 500px;
+    height: 420px;
+    margin: 1%;
+    display: flex;
+    background-color: white;
+    position: relative;
+    flex-direction: column;
+    border: 3px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card-calculate-final-price{
+    border-collapse: collapse;
+    width: 500px;
+    height: 420px;
+    margin: 1%;
+    display: flex;
+    background-color: #333333;
+    color: #ffffff;
+    position: relative;
+    flex-direction: column;
+    border: 3px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+.two-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+
+
+input{
+    width: 134%;
+    height: 33%;
+}
+
+.inputAPR{
+    width: 36%;
+    height: 33%;
+}
+
+.mySelect{
+    width: 134%;
+    height: 33%;
+}
+
+
+.trTittle{
+    width: 100%;
+}
+
+.tdTittle{
+    font-size: x-large;
+    font-family:inherit;
+    font-weight: bolder;
+    margin-bottom: 7%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 0;
+
+}
+
+
+.trDivider{
+    margin-top: 2%;
+}
+
+.ColumnTitle{
+    width: 24%;
+}
+
+table{
+    border-collapse:initial;
+    height: 80%;
+    margin-left: 16%;
+}
+
+
+
+
+.pruebaAPR{
+    margin-left: 5%;
+    margin-top: 10%;
+    border-bottom: 1px solid white;
+    width: 84%;
+}
+
+
+.TextVarJoin{
+    width: 100%;
+    display: flex;
+
+}
+
+.separateResult{
+    padding-left: 6px;
+
+}
+
+
+.third-window-title{
+text-align: center;
+color: rgb(61, 59, 59);
+font-size: 55px;
+font-family: "Playfair Display", Georgia, serif;
+margin-top: 0%;
+margin-bottom: 1%;
+}
+
+
+
+
+
+.pruebas{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.demo{
+    color:red;
+    font-size: medium;
+    margin-left: 5%;
+}
+
+
+.tdInput{
+    width: 40%;
+}
+
+.myButtonCalculator{
+    color: white;
+    margin-left: -55px;
+    border-radius: 6px;
+    background-color: #1877f2;
+    border: none;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
 }

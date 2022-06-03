@@ -9,6 +9,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: -56px;
+}
+
+.pack-containers-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
 .container-cities {
@@ -41,12 +50,28 @@
 
 }
 
+.cards-containers-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 245px;
+    height: 227px;
+    border: 2px solid darkslategrey;
+    border-radius: 13px;
+
+}
+
 .paragraph-style-profile {
     margin-top: 10%;
     font-weight: bold;
     font-style: italic;
 }
 
+.info-text{
+    margin-top: -168px;
+}
 
 
 

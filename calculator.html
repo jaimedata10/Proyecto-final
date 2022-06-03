@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <title>JIMA</title>
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -28,7 +29,6 @@
 <link rel="stylesheet" href="css/sidebar.css" title="Color">
 <link rel="stylesheet" href="css/3-thirdWindow.css" title="Color">
 <link rel="stylesheet" href="css/4-fourthWindow.css" title="Color">
-<link rel="stylesheet" href="css/5-responsiveCards.css" title="Color">
 <link rel="stylesheet" href="css/Footer.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 <link rel="stylesheet" href="css/calculator.css">
@@ -117,11 +117,11 @@
                 </button>
               </li>
 
-              <li><a href="" class="underlined ">
+              <li><a href="calculator.html#aboutus2-id" class="underlined ">
                   <div class="refs">About us</div>
                 </a></li>
 
-              <li><a href="calculator.html" class="underlined ">
+              <li><a href="calculator.html#calculator-id" class="underlined ">
                   <div class="refs">Calculator</div>
                 </a></li>
 
@@ -249,74 +249,120 @@
     </button>
 </div>
 
-<div class="calculatorSection">
-    <div class="second-window-title">Calculate your loan</div>
-    <div class="pack-containers">
+<div class="calculatorSection" id="calculator-id" >
+  <div class="third-window-title">Calculate your financial offer</div>
+
+
+  <div class="two-cards">
+
+    <div class="card-calculate">
+
+
+      <div class="tdTittle">Financial calculator</div>
+
+      <table>
+
+  
+        <tr class="trDivider">
+          <td class="ColumnTitle">Price</td>
+          <td> <input type="number" id="row1_ev1"  min="0" max="500000" placeholder="Put your value"></td>
+        </tr>
+  
+        <tr>
+        </tr>
+  
+        <tr class="trDivider">
+          <td class="ColumnTitle">Entrance</td>
+          <td> <input type="number" id="row1_ev2"  min="1000" max="50000" placeholder="1000"></td>
+  
+        </tr>
+  
+        <tr class="trDivider">
+          <td class="ColumnTitle">Months</td>
+            <td> 
+                <select class="mySelect" name="month" id="row1_ev3">
+
+                  <option value="24">24</option>
+
+                  <option value="36">36</option>
+            
+                  <option value="48">48</option>
+
+                  <option value="60">60</option>
+                </select>
+            </td>
+                        
+          
+          </td>
+        </tr>
+
+        <tr class="trDivider">
+          <td class="ColumnTitle">A.P.R</td>
+          <td class="tdInput"> <input class="inputAPR" readonly="readonly" id="row1_ev4" placeholder="7,00%"> </td>
+
+          <td> <button class="myButtonCalculator"
+            onclick="myMedia(getElementById('row1_ev1').value, getElementById('row1_ev2').value, 
+            getElementById('row1_ev3').value , getElementById('row1_ev4').value, 1)">
+            Calculate</button>
+          </td>
+
+          <td> <button class="myButtonCalculator"
+            onclick="myClean(getElementById('row1_ev1').value, getElementById('row1_ev2').value, 
+            getElementById('row1_ev3').value , getElementById('row1_ev4').value, 2)">
+            Clean</button>
+          </td>
+  
+        </tr>
         
-    <table>
-
-        <tr>
-            <td><b>Alumno</b></td>
-            <td><b>Ev 1</b></td>
-            <td><b>Ev 2</b></td>
-            <td><b>Ev 3</b></td>
-            <td><b>Nota media</b></td>
-        </tr>
-
-        <tr>
-            <td>Juan Rodriguez</td>
-            <td> <input type="number" id="row1_ev1" min="0" max="10"></td>
-            <td> <input type="number" id="row1_ev2" min="0" max="10"></td>
-            <td> <input type="number" id="row1_ev3" min="0" max="10"></td>
-            <td> <button onclick="myMedia(getElementById('row1_ev1').value, getElementById('row1_ev2').value, getElementById('row1_ev3').value,1)">Calcular media</button></td>
-           <td><div id="promedio1"></div></td> 
-        </tr>
-
-        <tr>
-            <td>Ana Garcia</td>
-            <td> <input type="number" id="row2_ev1" min="0" max="10"></td>
-            <td> <input type="number" id="row2_ev2" min="0" max="10"></td>
-            <td> <input type="number" id="row2_ev3" min="0" max="10"></td>
-            <td> <button onclick="myMedia(getElementById('row2_ev1').value,getElementById('row2_ev2').value,getElementById('row2_ev3').value,2)">Calcular media</button></td>
-            <td><div id="promedio2"></div></td> 
-
-        </tr>
-
-        <tr>
-            <td>Ruben Gomez</td>
-            <td> <input type="number" id="row3_ev1" min="0" max="10"></td>
-            <td> <input type="number" id="row3_ev2" min="0" max="10"></td>
-            <td> <input type="number" id="row3_ev3" min="0" max="10"></td>
-            <td> <button onclick="myMedia(getElementById('row3_ev1').value,getElementById('row3_ev2').value,getElementById('row3_ev3').value,3)">Calcular media</button></td>
-            <td><div id="promedio3"></div></td> 
-
-        </tr>
-
-        <tr>
-            <td>Alfredo Esteban</td>
-            <td> <input type="number" id="row4_ev1" min="0" max="10"></td>
-            <td> <input type="number" id="row4_ev2" min="0" max="10"></td>
-            <td> <input type="number" id="row4_ev3" min="0" max="10"></td>
-            <td> <button onclick="myMedia(getElementById('row4_ev1').value,getElementById('row4_ev2').value,getElementById('row4_ev3').value,4)">Calcular media</button></td>
-            <td><div id="promedio4"></div></td> 
-
-        </tr>
-
-        <tr>
-            <td>Lara Ruiz</td>
-            <td> <input type="number" id="row5_ev1" min="0" max="10"></td>
-            <td> <input type="number" id="row5_ev2" min="0" max="10"></td>
-            <td> <input type="number" id="row5_ev3" min="0" max="10"></td>
-            <td> <button onclick="myMedia(getElementById('row5_ev1').value,getElementById('row5_ev2').value,getElementById('row5_ev3').value,5)">Calcular media</button></td>
-            <td><div id="promedio5"></div></td> 
-
-        </tr>
-    </table>
 
     
-      
+      </table>
+  
+      <span class="demo" id="demo"></span>
+
+  
     </div>
+  
+  
+    <div class="card-calculate-final-price" >
+      
+
+      <div class="pruebas">
+
+        <div class="tdTittle">Your financial estimate</div>
+
+
+          <div class="pruebaAPR">
+            <div class="TextVarJoin">Final price of your vehicule:
+               <div class="separateResult"  id="Prize"></div>
+            </div>
+
+          </div>
+
+          <div class="pruebaAPR">
+            <div class="TextVarJoin" >Entrance: <div class="separateResult" id="Entrance" > </div>    </div>
+
+          </div>
+
+          <div class="pruebaAPR">
+            <div class="TextVarJoin"> Monthly Quantity: <div class="separateResult" id="Months"> </div></div>
+          </div>
+
+          <div class="pruebaAPR">
+            <div class="TextVarJoin">Final price with A.P.R: <div class="separateResult"  id="resultadoFinal">  </div>    </div>
+          </div>
+
+      
+      </div>
+  
+    </div>
+
+
+    
+
   </div>
+  
+</div>
 
 
 
@@ -324,8 +370,9 @@
 
 
 
-<div class="secondSection">
-  <div class="second-window-title">Who we are?</div>
+
+<div class="secondSection" id="aboutus2-id">
+  <div class="second-window-title">Meet our team</div>
   <div class="pack-containers">
 
     <div class="cards-containers">
@@ -344,7 +391,7 @@
     </div>
 
     <div class="cards-containers">
-      <img src="" class="container-cities" >
+      <img src="foto nacho.jpg" class="container-cities" >
       <p class="paragraph-style-profile">Ignacio Moreno Fernández</p>
     </div>
   </div>
@@ -368,11 +415,11 @@
     </div>
     <div class="middle box">
       <div class="topic">OUR SERVICES</div>
-      <div><a href="#">Calculator</a></div>
-      <div><a href="#">Automobiles</a></div>
+      <div><a href="calculator.html#calculator-id">Calculator</a></div>
+      <div><a href="#">Cars</a></div>
       <div><a href="#">Motorbikes</a></div>
       <div><a href="#">Latest Sales</a></div>
-      <div><a href="#">FAQS</a></div>
+      <div><a href="faqs.html">FAQS</a></div>
 
     </div>
     <div class="right box">
@@ -381,11 +428,11 @@
         <input type="text" placeholder="Enter email address">
         <input type="submit" name="" value="Send">
         <div class="media-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </form>
       <div class="lower">
