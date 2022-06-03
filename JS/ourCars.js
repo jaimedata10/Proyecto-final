@@ -11,6 +11,7 @@ function closeSidebar() {
     console.log('close sidebar');
     document.querySelector('.sidebar-ourCars').classList.remove('open');
 }   
+
 const coches = {
     'audi': [{ model: 'Serie 1', hp: '150hp', price: '20.000$', srcRute: `photos/audi/models/car1.png` },
     { model: 'Serie 1', hp: '150hp', price: '10.000$', srcRute: `photos/audi/models/car2.png` },

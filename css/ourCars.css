@@ -87,9 +87,12 @@ body{
 }
 
 .sidebar-ourCars {
+    width: 90%;
+    min-height: 100vh;
+    height: fit-content;
     padding: 165px 100px 80px 100px;
     background-color: #1c314a;;
-
+    box-shadow: -3px 0px 30px 0px #000000;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -100,9 +103,6 @@ body{
     position: fixed;
     z-index: 199;
     top: 0;
-    width: 90%;
-    min-height: 100vh;
-    height: fit-content;
     left: 100%;
     transition: 1s left;
 }
