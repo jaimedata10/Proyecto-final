@@ -6,179 +6,248 @@
     <link rel="stylesheet" href="css/ourCars.css">
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/Footer.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/menu.css" title="Color">
+    <link rel="stylesheet" href="css/2-secondWindow.css" title="Color">
+    <link rel="stylesheet" href="css/sidebar.css" title="Color">
+    <link rel="stylesheet" href="css/3-thirdWindow.css" title="Color">
+    <link rel="stylesheet" href="css/4-fourthWindow.css" title="Color">
+
+
+
 </head>
 
 <script src="JS/ourCars.js"></script>
 <!--<script src="JS/mainPage.js"></script>-->
 
 <body>
-    <!-- HEADER -->
-    <div class="header-fixed">
-        <div class="flex-container">
+    <div class="backImg">
+        <!-- HEADER -->
+        <div class="header-fixed">
             <div class="flex-container">
-                <div class="spacing-words">
-                    <div class="spacing-divs">
-                        Join us
-                    </div>
-                    <div class="spacing-divs">
-                        Contact
-                    </div>
-                </div>
-            </div>
-            <div class="spacing-divs">
-                Client portal
-            </div>
-        </div>
-        <header>
-            <img src="logo.png" class="logo">
-            <div>
-                <nav>
-                    <ul>
-                        <li><a class="menu" href="#">Menu</a></li>
-                        <li class="hidden-bars">
-                            <button class="open-button" onclick="openSidebar()">
-                                <div class="column-bars-short"></div>
-                                <div class="column-bars-long"></div>
-                                <div class="column-bars-long"></div>
-                                <div class="column-bars-short"></div>
-                            </button>
-                        </li>
-                        <li><a href="#" class="underlined ">Calculator</a></li>
-                        <div class="dropdown-container">
-                            <button onclick="openDropdown()" class="dropdown-button">
-                                <div class="flex-containers">
-                                    <a href="#" class="underlined">Our cars
-                                        <img src="arrow.svg" class="arrow-svg"></a>
-                                </div>
-                            </button>
-                            <div class="dropdown-content">
-                                <ul class="dropdown-menu">
-                                    <li>Brands</li>
-                                    <li>Fuel Types</li>
-                                    <li>Automobile</li>
-                                </ul>
-                            </div>
+                <div class="flex-container">
+                    <div class="spacing-words">
+                        <div class="spacing-divs">
+                            Join us
                         </div>
-                        <li><a href="#" class="underlined">Latest sales</a></li>
-                        <li><a href="faqs.html" class="underlined">FAQS</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </div>
-    <!-- MAIN PAGE -->
-    <div class="main-ourCars">
-
-        <button class="cards-ourCars" onclick="openSidebar()" >
-            <div class="logoMarca-ourCars"><img src="SVG/HONDA/honda.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">HONDA</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/AUDI/audi.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">AUDI</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/BMW/bmw.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">BMW</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/CITROEN/citroen.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">CITROEN</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/FORD/ford.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">FORD</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/MERCEDES/mercedes.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">MERCEDES</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/OPEL/opel.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">OPEL</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/NISSAN/nissan.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">NISSAN</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/SEAT/seat.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">SEAT</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/VOLKSWAGEN/volkswagen.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">VOLKSWAGEN</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/KIA/kia.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">KIA</div>
-        </button>
-        <button class="cards-ourCars" onclick="openSidebar()">
-            <div class="logoMarca-ourCars"><img src="SVG/PEUGEOT/peugeot.svg" alt="downArrow"></div>
-            <div class="nombreMarca-ourCars">PEUGEOT</div>
-        </button>
-
-    </div>
-    <!-- SIDEBAR-->
-    <div class="sidebar-ourCars">
-        <button onclick="closeSidebar()">CLOSE</button>
-    </div>
-    <!-- FOOTER -->
-    <footer>
-        <div class="content">
-            <div class="left box">
-                <div class="upper">
-                    <div class="topic">OUR COMPANY</div>
-                    <p>JIMA car dealership was founded in 2020 with two principles: sell a good product at a fair price
-                        and give good service.
-                        a fair price and to give a good service. Since then, thousands of customers have decided to buy
-                        their car at our dealership. Thanks to their trust we continue to be the market leader in car
-                        sales.
-                        in car sales. Our good work and the satisfaction of our customers have made us the largest car
-                        dealer in the world.
-                        the largest car dealership in Spain. Stop looking for more dealerships, JIMA is
-                        one of the companies with more history and reputation among car dealers nationwide.
-                        nationally.</p>
+                        <div class="spacing-divs">
+                            Contact
+                        </div>
+                    </div>
                 </div>
+                <div class="spacing-divs">
+                    Client portal
+                </div>
+            </div>
+            <header>
+                <a href="index.html"><img src="logo.png" class="logo"></a>
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a class="menu underlined" href="#">
+                                    <div class="refs">Menu</div>
+                                </a></li>
+                            <li class="hidden-bars">
+                                <button class="open-button" onclick="openSidebar()">
+                                    <div class="column-bars-short"></div>
+                                    <div class="column-bars-long"></div>
+                                    <div class="column-bars-long"></div>
+                                    <div class="column-bars-short"></div>
+                                </button>
+                            </li>
+                            <li><a href="index.html#aboutus-id" class="underlined ">
+                                    <div class="refs">About us</div>
+                                </a></li>
+                            <li><a href="calculator.html#calculator-id" class="underlined ">
+                                    <div class="refs">Calculator</div>
+                                </a></li>
+                            <div class="dropdown-container">
+                                <button onclick="openDropdown()" class="dropdown-button" id="arrow-button">
+                                    <div class="flex-containers">
+                                        <a href="#" class="underlined">
+                                            <div class="refs">Our cars</div>
+                                            <img src="arrow.svg" class="arrow-svg">
+                                        </a>
+                                    </div>
+                                </button>
+                                <div class="dropdown-content" id="arrow-dropdown">
+                                    <ul class="dropdown-menu">
+                                        <li>Cars</li>
+                                        <li>Motorbikes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <li><a href="#" class="underlined">
+                                    <div class="refs">Latest sales</div>
+                                </a></li>
+                            <li><a href="faqs.html" class="underlined">
+                                    <div class="refs">FAQS</div>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <!-- MAIN PAGE -->
+        <div class="main-ourCars">
 
+            <button class="cards-ourCars" onclick="openSidebar('audi')">
+                <div class="logoMarca-ourCars"><img src="photos/audi/audi.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">AUDI</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('bmw')">
+                <div class="logoMarca-ourCars"><img src="photos/bmw/bmw.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">BMW</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('citroen')">
+                <div class="logoMarca-ourCars"><img src="photos/citroen/citroen.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">CITROEN</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('ford')">
+                <div class="logoMarca-ourCars"><img src="photos/ford/ford.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">FORD</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('honda')">
+                <div class="logoMarca-ourCars"><img src="photos/honda/honda.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">HONDA</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('kia')">
+                <div class="logoMarca-ourCars"><img src="photos/kia/kia.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">KIA</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('mercedes')">
+                <div class="logoMarca-ourCars"><img src="photos/mercedes/mercedes.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">MERCEDES</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('nissan')">
+                <div class="logoMarca-ourCars"><img src="photos/nissan/nissan.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">NISSAN</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('opel')">
+                <div class="logoMarca-ourCars"><img src="photos/opel/opel.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">OPEL</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('peugeot')">
+                <div class="logoMarca-ourCars"><img src="photos/peugeot/peugeot.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">PEUGEOT</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('seat')">
+                <div class="logoMarca-ourCars"><img src="photos/seat/seat.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">SEAT</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('volkswagen')">
+                <div class="logoMarca-ourCars"><img src="photos/volkswagen/volkswagen.svg" alt="downArrow"></div>
+                <div class="nombreMarca-ourCars">VOLKSWAGEN</div>
+            </button>
+        </div>
+        <!-- SIDEBAR-->
+        <div class="sidebar-ourCars">
+            <button class="closeSidebar-ourCars" onclick="closeSidebar()"><img src="equis.svg" alt=""></button>
+
+            <div class="sidebarCard-ourCars">
+                <div class="fotoCoche-ourCars"><img id="carPhoto1" onclick="openModal('0')" src=""></div>
+                <div class="modeloCoche-ourCars" id="carPhotoModel1">Info</div>
             </div>
-            <div class="middle box">
-                <div class="topic">OUR SERVICES</div>
-                <div><a href="#">Car Purchase</a></div>
-                <div><a href="#">Catalogue</a></div>
-                <div><a href="#">Car Rental</a></div>
-                <div><a href="#">Repair Service</a></div>
-                <div><a href="#">Customer Service</a></div>
-                <div><a href="#">Our Dealers</a></div>
+
+            <div class="sidebarCard-ourCars">
+                <div class="fotoCoche-ourCars"><img id="carPhoto2" onclick="openModal('1')" src=""></div>
+                <div class="modeloCoche-ourCars" id="carPhotoModel2">Info</div>
             </div>
-            <div class="right box">
-                <div class="topic">SUBSCRIBE US</div>
-                <form action="#">
-                    <input type="text" placeholder="Enter email address">
-                    <input type="submit" name="" value="Send">
-                    <div class="media-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </form>
-                <div class="lower">
-                    <div class="topic">CONTACT US</div>
-                    <div class="phone">
-                        <a href="#"><i class="fas fa-phone-volume"></i>+03495 857 4599</a>
-                    </div>
-                    <div class="email">
-                        <a href="#"><i class="fas fa-envelope"></i>contact@companyJIMA.com</a>
-                    </div>
+
+            <div class="sidebarCard-ourCars">
+                <div class="fotoCoche-ourCars"><img id="carPhoto3" onclick="openModal('2')" src=""></div>
+                <div class="modeloCoche-ourCars" id="carPhotoModel3">Info</div>
+            </div>
+
+            <div class="sidebarCard-ourCars">
+                <div class="fotoCoche-ourCars"><img id="carPhoto4" onclick="openModal('3')" src=""></div>
+                <div class="modeloCoche-ourCars" id="carPhotoModel4">Info</div>
+            </div>
+
+            <div class="sidebarCard-ourCars">
+                <div class="fotoCoche-ourCars"><img id="carPhoto5" onclick="openModal('4')" src=""></div>
+                <div class="modeloCoche-ourCars" id="carPhotoModel5">Info</div>
+            </div>
+
+            <div class="sidebarCard-ourCars">
+                <div class="fotoCoche-ourCars"><img id="carPhoto6" onclick="openModal('5')" src=""></div>
+                <div class="modeloCoche-ourCars" id="carPhotoModel6">Info</div>
+            </div>
+        </div>
+        <!-- MODAL -->
+        <div class="modalContainer-ourCars">
+            <div class="modal-ourCars">
+                <button class="closeModal-ourCars" onclick="closeModal()"><img src="equis.svg" alt=""></button>
+                <div class="imgModal-ourCars"><img id="modalPhoto" src="" alt=""></div>
+                <div class="modalContent-ourCars">
+                    <ul class="carValuesModal-ourCars">
+                        <li id="marcaModal"></li>
+                        <li id="modeloModal"></li>
+                        <li id="horsePowerModal"></li>
+                        <li id="priceModal"></li>
+                    </ul>
+                    <div class="modalLogo-ourCars"><img id="modalLogo" src="" alt=""></div>
                 </div>
             </div>
         </div>
+        <!-- FOOTER -->
+        <footer>
+            <div class="content">
+                <div class="left box">
+                    <div class="upper">
+                        <div class="topic">OUR COMPANY</div>
+                        <p>JIMA car dealership was founded in 2020 with two principles: sell a good product at a fair
+                            price
+                            and give good service.
+                            a fair price and to give a good service. Since then, thousands of customers have decided to
+                            buy
+                            their car at our dealership. Thanks to their trust we continue to be the market leader in
+                            car
+                            sales.
+                            in car sales. Our good work and the satisfaction of our customers have made us the largest
+                            car
+                            dealer in the world.
+                            the largest car dealership in Spain. Stop looking for more dealerships, JIMA is
+                            one of the companies with more history and reputation among car dealers nationwide.
+                            nationally.</p>
+                    </div>
 
-    </footer>
+                </div>
+                <div class="middle box">
+                    <div class="topic">OUR SERVICES</div>
+                    <div><a href="#">Car Purchase</a></div>
+                    <div><a href="#">Catalogue</a></div>
+                    <div><a href="#">Car Rental</a></div>
+                    <div><a href="#">Repair Service</a></div>
+                    <div><a href="#">Customer Service</a></div>
+                    <div><a href="#">Our Dealers</a></div>
+                </div>
+                <div class="right box">
+                    <div class="topic">SUBSCRIBE US</div>
+                    <form action="#">
+                        <input type="text" placeholder="Enter email address">
+                        <input type="submit" name="" value="Send">
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </form>
+                    <div class="lower">
+                        <div class="topic">CONTACT US</div>
+                        <div class="phone">
+                            <a href="#"><i class="fas fa-phone-volume"></i>+03495 857 4599</a>
+                        </div>
+                        <div class="email">
+                            <a href="#"><i class="fas fa-envelope"></i>contact@companyJIMA.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
 </body>
 
 </html>
