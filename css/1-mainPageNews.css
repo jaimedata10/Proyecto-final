@@ -2,9 +2,10 @@
     box-sizing: border-box;
     font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 }
-
+/*
 body {
     margin: 0;
+    background: url("https://movilidadelectrica.com/wp-content/uploads/2020/02/Concesionario.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -12,10 +13,30 @@ body {
 }
 
 .overlay {
-    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
+}*/
+
+
+
+body{
+    margin: 0 !important;
+    background: none !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.overlay{
+    margin: 112px 0 0 0;
+    background: url("https://movilidadelectrica.com/wp-content/uploads/2020/02/Concesionario.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: fit-content;
 }
 
 .flex-container {
@@ -332,6 +353,8 @@ img.logo {
     background-color: red;
     width: 100%;
 }
+
+
 
 
 
