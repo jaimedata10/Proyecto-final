@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>JIMA</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/1-mainPageNews.css" title="Color">
+<link rel="stylesheet" href="css/menu.css" title="Color">
+<link rel="stylesheet" href="css/dropdown.css" title="Color">
+<link rel="stylesheet" href="css/2-secondWindow.css" title="Color">
+<link rel="stylesheet" href="css/sidebar.css" title="Color">
+<link rel="stylesheet" href="css/4-fourthWindow.css" title="Color">
+<link rel="stylesheet" href="css/Footer.css">
+<link rel="stylesheet" href="css/latestNews.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<script src="JS/mainPage.js"></script>
+
+<div class="overlay">
+
+  <body>
+
+    <div class="header-fixed">
+
+      <div class="flex-container">
+        <div class="flex-container">
+          <div class="spacing-words">
+            <div class="spacing-divs">
+              Join us
+            </div>
+            <div class="spacing-divs">
+              Contact
+            </div>
+          </div>
+        </div>
+        <div class="spacing-divs">
+          Client portal
+        </div>
+      </div>
+
+      <header>
+        <img src="logo.png" class="logo">
+        <div>
+          <nav>
+            <ul>
+              <li><a class="menu underlined" href="#">
+                  <div class="refs">Menu</div>
+                </a></li>
+              <li class="hidden-bars">
+                <button class="open-button" onclick="openSidebar()">
+                  <div class="column-bars-short"></div>
+                  <div class="column-bars-long"></div>
+                  <div class="column-bars-long"></div>
+                  <div class="column-bars-short"></div>
+                </button>
+              </li>
+
+              <li><a href="index.html#aboutus-id" class="underlined ">
+                  <div class="refs">About us</div>
+                </a></li>
+
+              <li><a href="calculator.html#calculator-id" class="underlined ">
+                  <div class="refs">Calculator</div>
+                </a></li>
+
+              <div class="dropdown-container">
+                <button onclick="openDropdown()" class="dropdown-button" id="arrow-button">
+                  <div class="flex-containers">
+                    <div href="#" class="underlined">
+                      <div class="refs">Our cars</div>
+                      <img src="arrow.svg" class="arrow-svg">
+                    </div>
+                  </div>
+                </button>
+
+                <div class="dropdown-content" id="arrow-dropdown">
+                  <ul class="dropdown-menu">
+                    <li><a href="ourCars.html">Automobiles</a></li>
+                    <li>Motorbikes</li>
+                  </ul>
+                </div>
+              </div>
+
+              <li><a href="latestNews.html" class="underlined">
+                  <div class="refs">Latest news</div>
+                </a></li>
+              <li><a href="faqs.html" class="underlined">
+                  <div class="refs">FAQS</div>
+                </a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+    </div>
+
+
+    <div class="containerNews">
+
+      
+
+
+
+        <h3 class="titleNews">Los mejores coches familiares por menos de 15.000€</h3>
+
+        <div class="imageNews1">
+            <img class="formula1News" src="photosNews/news1/familia.png" alt="">
+        </div>
+
+        <p>
+            05.07.2021 — ¿Así que estás buscando un coche familiar?
+        </p>
+
+
+        <p>
+            Si aún estás resistiendo a la moda de los SUV, o si te has dado cuenta que la falta
+            de maniobrabilidad y consumo de combustible apabullante de los todocaminos y prefieres algo 
+            más práctico sin renunciar al espacio al que te has acostumbrado, no te culpamos.
+        </p>
+        
+        <p>
+            Un año antes, la comisión de la F1 ya hablaba de organizar carreras de coches eléctricos,
+            solo que aún no les había puesto nombre.
+        </p>
+
+        <p>
+            La silueta familiar, también conocida como sports tourer o station wagon tiene unos orígenes que
+             se remontan incluso antes de que existiera el motor de combustión. Esta última denominación, literalmente 
+             “carreta de estación”, era un tipo de carro tirado por caballos que se usaba para llevar a los viajeros desde su 
+             parada de tren hasta su hospedaje, con maletas incluidas. El espacio de carga, amplio y protegido contra las inclemencias
+             del tiempo, aseguraban que llegasen a su destino rodeados de lujo y confort.
+        </p>
+
+        <p>
+            Puede que hoy ya no exista la necesidad de transportar viajeros y maletas a la estación del tren —¡Al menos no tanto como antes!—, 
+            pero la esencia sigue siendo la misma y la practicalidad triunfa. Las siluetas familiares son el tipo de berlina favorito en Alemania, 
+            y lo son con motivo. ¿Viajas a la nieve y no sabes qué hacer con los esquís? ¿Necesitas hacer una mudanza? ¿Te preocupa la comodidad de 
+            tu perro? ¿Un fin de semana de acampada con equipo para cinco personas? ¿Almacenamiento suficiente para cargar guitarras y amplificadores?
+        </p>
+
+        <p>
+            Quizás el mayor obstáculo que se tenga que superar sea el estético, pues los techos alargados y el espacio de carga trasero generan un efecto óptico
+             de mucha mayor longitud que la que tienen—por lo general, apenas cuentan con unos centímetros más que sus contrapartidas sedán—, sin embargo esta mayor 
+             distancia hace que su conducción sea más estable y cómoda. Además, muchos modelos cuentan con una opción de altas prestaciones que merece la pena conducir.
+        </p>
+
+        <p>
+            Por otra parte, atrás quedaron los días en los que solo las berlinas de tamaño completo contaban con versión familiar. Ahora los fabricantes han descubierto 
+            que es mucho más beneficioso para ellos ofrecer este tipo de carrocerías en diferentes segmentos.
+
+        </p>
+
+        <p>
+            Superado esto, lo cierto es que los coches familiares son una de las opciones más inteligentes si se quiere un transporte polivalente y cómodo. Por ello, desde
+            JIMA hemos compilado una lista de modelos de diferentes tamaños que puedes encontrar en nuestro portal por menos de 15.000 euros que, además, cuentan con su propia 
+            reseña en nuestra página.
+
+        </p>
+
+
+
+        <h3 class="secondTitle lineNews">Volkswagen Golf Variant</h3>
+        
+        <p>
+            <img src="photosNews/news1/Volkswagen_Golf__1_.jpg" alt="">
+
+        </p>
+        
+        <h3 class="secondTitle">
+            Puntuación JIMA: 9/10
+        </h3>
+
+        <h5 class="secondTitle">
+            Segmento C
+        </h5>
+        
+
+        <p>
+            El Seat León no necesita introducción en España, y cada vez la necesita menos en el resto del mundo —Alemania ya superó
+            su país natal en volumen de ventas—. La versión actual, lanzada en 2020, cuenta con muchos tipos de motorizaciones diferentes,
+            desde híbrido enchufable hasta gas natural, sin olvidar, por supuesto, la combustión interna. Incluso tiene versiones más deportivas,
+            llamadas FR, que son las que recomendamos.
+        </p>
+
+        <p>
+            Bien equipado de serie, los modelos de Seat han dado un salto cualitativo en acabados y materiales, por lo que los pasajeros siempre se sentirán a
+            gusto en él. Además, uno de los puntos fuertes de la marca española es la propuesta de valor, especialmente si se comparan con los Volkswagen con los
+            que comparte componentes y plataforma.
+        </p>
+
+
+        <h3 class="secondTitle lineNews">Seat León ST</h3>
+        
+        <p>
+            <img src="photosNews/news1/SEAT_Leon_ST__4_.jpg" alt="">
+
+        </p>
+        
+        <h3 class="secondTitle">
+            Puntuación JIMA: 8/10 
+        </h3>
+
+        <h5 class="secondTitle">
+            Segmento C
+        </h5>
+        
+
+        <p>
+            El Golf es la vara de medir por la que se juzga a cualquier coche de su segmento y, en muchos casos, 
+            a los de los demás. Su polivalencia, sus múltiples opciones de motorización y su interior bien acabado
+            han hecho que se convierta, casi de facto, en la opción predeterminada de compra en Europa, aunque su
+            éxito es global.
+        </p>
+
+        <p>
+            Su conducción es precisa y cuenta con un nivel de aislamiento que hace los viajes cómodos y silenciosos.
+            Cuenta con 611 litros de maletero y motores para satisfacer a cualquier comprador: gasolina de 110, 130 y 150 CV 
+            (algunas de ellas con hibridación ligera); diésel de 115 y 150 CV e, incluso, híbridos enchufables. Además, desde
+            Volkswagen han contemplado diferentes clases de comprador y han creado versiones más pensadas para los caminos de
+            tierra (Alltrack) o un modelo de altas prestaciones, denominado R, con 320 caballos. Estos dos últimos cuentan con un 
+            sistema de tracción total 4Motion.
+        </p>
+
+        
+
+
+
+
+
+        
+        <h3 class="secondTitle lineNews">Kia Creed Tourer</h3>
+        
+        <p>
+            <img src="photosNews/news1/Kia_Ceed__2_.jpg" alt="">
+
+        </p>
+        
+        <h3 class="secondTitle">
+            Puntuación JIMA: 8/10
+        </h3>
+
+        <h5 class="secondTitle">
+            Segmento C
+        </h5>
+        
+
+        <p>
+            Value-for-money. Esa es la premisa básica de Kia, y la que le ha catapultado al top 10 de ventas 
+            en España desde que la marca era prácticamente una desconocida en el mercado. Su Ceed es la respuesta 
+            al segmento C, posiblemente el más competitivo de Europa —donde el VW Golf reina con puño de hierro—. 
+            Para hacerse hueco, Kia ha optado por un generoso equipamiento de serie y una garantía de siete años.
+        </p>
+
+        <p>
+            Con la familia renovada en 2019, los acabados y tecnología fueron actualizados —y se originaron más 
+            versiones, también familiares como el shooting brake Proceed o el crossover Xceed— y se le otorgó un 
+            maletero de 695 litros de capacidad, el líder de la categoría. Sus motores son correctos, y cuenta con
+             un diésel de 136 CV o un gasolina de 120 o 140 CV, así como una versión híbrida enchufable.
+        </p>
+
+
+        
+       
+    </div>
+
+    
+    
+
+
+  
+      <button onclick="_scrollTop()" class="arrow-up">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <svg version="1.1" width="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 493.472 493.472" style="enable-background:new 0 0 493.472 493.472;"
+          xml:space="preserve">
+          <g>
+            <g>
+              <path d="M246.738,0C110.69,0,0.01,110.692,0.01,246.732c0,136.064,110.68,246.74,246.728,246.74s246.724-110.676,246.724-246.74
+            C493.462,110.692,382.786,0,246.738,0z M361.094,296.68l-8.964,8.972c-2.02,2.012-5.564,2.012-7.576,0l-94.932-94.924
+            c-0.752-0.756-1.736-1.132-2.72-1.132s-1.976,0.376-2.732,1.132l-94.784,94.768c-2.004,1.996-5.548,1.996-7.56,0l-8.972-8.972
+            c-2.08-2.076-2.08-5.48,0-7.552l110.16-110.156c0.996-0.984,2.332-1.532,3.996-1.532c1.436,0,2.78,0.548,3.764,1.532
+            L361.09,289.128C363.174,291.212,363.174,294.604,361.094,296.68z" />
+            </g>
+          </g>
+        </svg>
+  
+      </button>
+
+      
+  
+  <footer>
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">OUR COMPANY</div>
+          <p>JIMA car dealership was founded in 2020 with two principles: sell a good product at a fair price and give
+            good service. Since then, thousands of customers have decided to buy their car at our dealership. Thanks
+            to their trust we continue to be the market leader in car sales. Our good work and the satisfaction of our
+            customers have made us the largest car dealer in the world. Stop looking for more dealerships, JIMA is
+            one of the companies with more history and reputation among car dealers nationwide.
+          </p>
+        </div>
+  
+      </div>
+      <div class="middle box">
+        <div class="topic">OUR SERVICES</div>
+        <div><a href="calculator.html#calculator-id">Calculator</a></div>
+        <div><a href="#">Cars</a></div>
+        <div><a href="#">Motorbikes</a></div>
+        <div><a href="#">Latest Sales</a></div>
+        <div><a href="faqs.html">FAQS</a></div>
+  
+      </div>
+      <div class="right box">
+        <div class="topic">SUBSCRIBE US</div>
+        <form action="#">
+          <input type="text" placeholder="Enter email address">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+        <div class="lower">
+          <div class="topic">CONTACT US</div>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>+03495 857 4599</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>contact@companyJIMA.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+  
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="JS/responsiveCards.js"></script>
+  
+  
+  </body>
+  
+  </html>

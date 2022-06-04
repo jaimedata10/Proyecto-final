@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+
+.overlay {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 30px;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.spacing-words {
+    padding-left: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 167px;
+    height: 30px;
+}
+
+.spacing-divs {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    transition: box-shadow .4s;
+    font-size: 13px;
+    color: #c9c9c9;
+    cursor: pointer;
+}
+
+.spacing-divs:hover {
+    /* box-shadow: inset 0 -2px 0 rgb(255, 255, 255);*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 85px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid #504d4d;
+}
+
+.official-title {
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-top: 16px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 6%;
+}
+
+.refs {
+    width: 105px;
+    height: 85px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: box-shadow .4s;
+    margin-left: 30px;
+}
+
+a:hover {
+    /* box-shadow: inset 0 -4px 0 rgb(144 124 55);*/
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu {
+    display: none;
+}
+
+.hidden-bars {
+    display: none;
+}
+
+.flex-containers {
+    display: flex;
+    align-items: center;
+}
+
+.underlined {
+    text-decoration: none !important;
+    color: white;
+    font-size: 17px;
+}
+
+.underlined:hover {
+    color: #5beb90;
+}
+
+
+.webdesign-container {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flex-bar {
+    display: flex;
+    flex-flow: row;
+    padding-left: 10%;
+    width: 600px;
+}
+
+.webdesign-title {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 37px;
+    font-weight: normal;
+}
+
+.webdesign-text {
+    font-size: 14px;
+    line-height: 23px;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    margin-top: 168px;
+}
+
+.flex-content {
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    width: 505px;
+}
+
+.webdesign-find {
+    font-weight: bold;
+    margin-right: 10px;
+    border-bottom: 1px solid rgb(144, 124, 55);
+    width: 108px;
+    height: 23px;
+}
+
+.arrow-svg.open {
+    transform: rotate(180deg);
+}
+
+.arrow-svg {
+    transform: rotate(0deg);
+    transition: .3s transform;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.arrow-up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0px;
+    opacity: 0;
+    transition: .4s opacity;
+}
+
+.arrow-up.visible {
+    opacity: 1;
+}
+
+img.logo {
+    width: 80px;
+    height: 80px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    margin-left: 2%;
+}
+
+
+
+.carousel-control-next, .carousel-control-prev {
+    height: auto;
+}
+
+.full-carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.absolute-paragraph {
+    position: absolute;
+    z-index: 3;
+    width: 40%;
+    padding-top: 15%;
+    padding-left: 8%;
+    opacity: 0.9;
+}
+
+.paragraph-description {
+    border: double;
+    background-color: #f2e5e4;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.padmar {
+    margin: 10px;
+}
+
+
+
+
+/* Creación media queries: */
+
+@media (max-width: 980px) {
+    .webdesign-text {
+        width: 450px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .flex-container {
+        display: none;
+    }
+
+    .underlined {
+        display: none;
+    }
+
+    .menu {
+        color: white;
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 125px;
+    }
+
+    .hidden-bars {
+        display: block;
+        padding-top: 21px;
+    }
+
+    .arrow-svg {
+        display: none;
+        cursor: pointer;
+    }
+
+    .bars {
+        position: relative;
+        top: 85px;
+        left: 9%;
+    }
+
+    .pack-containers {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .official-title {
+        padding-left: 3px;
+    }
+
+    .underlined {
+        display: none;
+    }
+
+    .menu {
+        color: white;
+        padding-top: 30px;
+        list-style-type: none;
+        text-decoration: none;
+        padding-top: 0px;
+    }
+
+    .hidden-bars {
+        display: block;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .webdesign-text {
+        width: 400px;
+    }
+
+}
+
+.header-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    top: 0;
+    box-shadow: 0px 6px 5px -6px rgb(0 0 0 / 75%);
+    background: linear-gradient(to bottom, black, white);
+}
+
+.redContenedor {
+    background-color: red;
+    width: 100%;
+}
+
+
+
+
+
+/* description*/
+
+.containerNews{
+    margin-top: 133px;
+    margin-bottom: 8rem;
+}
+
+.titleNews{
+    text-align: center;
+    font-size: xx-large;
+    font-family: revert;
+}
+
+p{
+    width:90%;
+    margin-left: 5%;
+}
+
+.imageNews1{
+    display:flex;
+}
+
+.formula1News{
+    width: 50%;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.secondTitle{
+    width:90%;
+    margin-left: 5%;
+    
+}
+
+.lineNews{
+    border-bottom: 3px solid rgb(0, 206, 165);
+    width: 23%;
+}
+
+
+.tableContainerNews{
+    display:flex;
+    margin-left: 5%;
+    margin-bottom: 3%;
+
+}
+
+.tableNews{
+    width:90%;
+}
+
+.tableNews, .tdNews , .thNews,  .trNews{
+    border: 1px solid black;
+  }

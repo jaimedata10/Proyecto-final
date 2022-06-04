@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>JIMA</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/1-mainPageNews.css" title="Color">
+<link rel="stylesheet" href="css/menu.css" title="Color">
+<link rel="stylesheet" href="css/dropdown.css" title="Color">
+<link rel="stylesheet" href="css/2-secondWindow.css" title="Color">
+<link rel="stylesheet" href="css/sidebar.css" title="Color">
+<link rel="stylesheet" href="css/4-fourthWindow.css" title="Color">
+<link rel="stylesheet" href="css/Footer.css">
+<link rel="stylesheet" href="css/latestNews.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<script src="JS/mainPage.js"></script>
+
+<div class="overlay">
+
+  <body>
+
+    <div class="header-fixed">
+
+      <div class="flex-container">
+        <div class="flex-container">
+          <div class="spacing-words">
+            <div class="spacing-divs">
+              Join us
+            </div>
+            <div class="spacing-divs">
+              Contact
+            </div>
+          </div>
+        </div>
+        <div class="spacing-divs">
+          Client portal
+        </div>
+      </div>
+
+      <header>
+        <img src="logo.png" class="logo">
+        <div>
+          <nav>
+            <ul>
+              <li><a class="menu underlined" href="#">
+                  <div class="refs">Menu</div>
+                </a></li>
+              <li class="hidden-bars">
+                <button class="open-button" onclick="openSidebar()">
+                  <div class="column-bars-short"></div>
+                  <div class="column-bars-long"></div>
+                  <div class="column-bars-long"></div>
+                  <div class="column-bars-short"></div>
+                </button>
+              </li>
+
+              <li><a href="index.html#aboutus-id" class="underlined ">
+                  <div class="refs">About us</div>
+                </a></li>
+
+              <li><a href="calculator.html#calculator-id" class="underlined ">
+                  <div class="refs">Calculator</div>
+                </a></li>
+
+              <div class="dropdown-container">
+                <button onclick="openDropdown()" class="dropdown-button" id="arrow-button">
+                  <div class="flex-containers">
+                    <div href="#" class="underlined">
+                      <div class="refs">Our cars</div>
+                      <img src="arrow.svg" class="arrow-svg">
+                    </div>
+                  </div>
+                </button>
+
+                <div class="dropdown-content" id="arrow-dropdown">
+                  <ul class="dropdown-menu">
+                    <li><a href="ourCars.html">Automobiles</a></li>
+                    <li>Motorbikes</li>
+                  </ul>
+                </div>
+              </div>
+
+              <li><a href="latestNews.html" class="underlined">
+                  <div class="refs">Latest news</div>
+                </a></li>
+              <li><a href="faqs.html" class="underlined">
+                  <div class="refs">FAQS</div>
+                </a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+    </div>
+
+
+    <div class="containerNews">
+
+      
+
+
+
+        <h3 class="titleNews">La importancia de la Fórmula E para el futuro de la automoción</h3>
+
+        <div class="imageNews1">
+            <img class="formula1News" src="photosNews/news1/formula1.png" alt="">
+        </div>
+
+
+        <p>
+        04.05.2022 - En el año 2012 se celebró la primera carrera de Fórmula E. Muchos llevaban 
+        ya tiempo imaginando que, más pronto que tarde, la hegemonía de los coches de combustión 
+        interna llegaría a su fin, abriendo el camino a otro tipo de tecnologías alternativas.
+        </p>
+        
+        <p>
+            Un año antes, la comisión de la F1 ya hablaba de organizar carreras de coches eléctricos,
+            solo que aún no les había puesto nombre.
+        </p>
+
+        <p>
+        Y así se generó el sueño para el futuro de tener grandes torneos de competición internacional 
+        al más alto nivel con coches eléctricos, y no con coches de gasolina. Poco a poco se está empezando 
+        a hablar de la Fórmula E como contrapunto a la Fórmula 1 de gasolina, que siempre se ha considerado 
+        como la máxima categoría de todas las competiciones de motor.
+        </p>
+
+        <h3 class="secondTitle">¿La alternativa eléctrica de la Fórmula 1?</h3>
+
+        <p>
+            La Fórmula 1 se creó como un campeonato mundial de pilotos y equipos, con eventos llamados Grandes Premios, 
+            que se celebran en diferentes países. Es la propia competición la que más dinero gasta en pilotos y sobre todo 
+            en tecnología y nuevos desarrollos en los coches para que cada equipo de pilotos construya el coche más rápido,
+            más competitivo y más fiable.
+        </p>
+
+        <p>
+            La Fórmula 1 siempre ha sido un laboratorio de investigación de la más alta tecnología automovilística en materiales, 
+            motores aerodinámicos, neumáticos, etc. Del mismo modo, también es un escaparate para las marcas que buscan crear los 
+            coches más completos. Y, por supuesto, en muchas ocasiones las carreras de Fórmula 1 son la motivación y el combustible
+            para alimentar la pasión y el amor por los coches de carreras y el motor.
+        <p>   
+         Con esa idea, la gente empezó a soñar con una Fórmula 1 eléctrica. La FIA, la Federación Internacional de Automovilismo,
+         que también controla la Fórmula 1, lo vio y se animó a crear este campeonato. No es de extrañar que aún no tenga el renombre 
+         de su hermana mayor, ya que no siempre es fácil ganar adeptos a una nueva competición.
+        </p>  
+
+        <p> 
+            Durante bastante tiempo, el concepto de coche eléctrico se asoció exclusivamente a un vehículo lento, torpe y desagradable, 
+            y mucha gente aún sigue creyendo que no es una opción útil y viable para los consumidores, ni el vehículo que podría sustituir a
+            los coches de gasolina en los próximos años. 
+        </p>
+
+        <p>
+            Así que estos son dos los objetivos principales que persigue la Fórmula E:
+
+            <p>
+                ★ En primer lugar, hacer saber a todo el mundo que los vehículos eléctricos ya existen, que van en serio y que son tan válidos 
+                como cualquier otro coche para competir con ellos (aunque por ahora todavía tengan algunas limitaciones).
+
+            </p>
+
+            <p>
+            
+                ★ Al mismo tiempo, sirve como un laboratorio para desarrollar y aplicar las últimas tecnologías en propulsión de vehículos eléctricos, 
+                como nuevos motores, baterías o sistemas de carga.
+
+
+            </p>
+       
+        </p>
+
+        <p>
+            Pero, como toda competición que parte de cero, la Fórmula E tuvo que buscar fabricantes, ingenieros, marcas y proveedores que quisieran participar
+             en su proyecto.
+
+        </p>
+
+        <p>
+            Por supuesto, hay algo que se debe tener en cuenta: el título de gran campeonato que ostenta la Fórmula 1, que tiene todo el espectáculo y la celebridad 
+            asociados a ella todavía no se puede discutir. Es evidente que la Fórmula E es aún bastante más modesta y humilde.
+
+        </p>
+        
+
+        <h3 class="secondTitle">¿Cómo son los coches de la Fórmula E?</h3>
+
+        <p>
+            Cuando se trata de los monoplazas que forman parte de la parrilla de la nueva Fórmula E, estamos hablando de coches que han sido diseñados para ser 
+            competitivos, y a la vez lo más sostenibles y eficientes posible.
+
+        </p>
+
+        <p>
+            Por ejemplo, solo hay dos tipos de neumáticos para todo el campeonato. Deben ser duraderos, eficaces y eficientes, y a la vez adecuados 
+            tanto para asfalto seco como para asfalto húmedo.
+            
+        </p>
+
+        <p>
+            Para las diez carreras con las que cuenta el campeonato, cada coche correrá con solo cinco juegos de neumáticos, lo que significa que cada juego de neumáticos debe durar dos Grandes Premios completos, incluyendo los entrenamientos, la calificación y la propia carrera.
+
+        </p>
+        
+        <p>
+            En las carreras de Fórmula 1 no se trata solo de velocidad, sino también de estrategia. Son carreras en las que no será posible alcanzar velocidades tan rápidas como los 360 km/h de la Fórmula 1, pero en las que será necesario que el piloto demuestre su talento y habilidad aprovechando los huecos que aparezcan para adelantar.
+
+
+        </p>
+
+        <p>
+
+            Los coches tienen una potencia máxima de 200 kW (272 CV), que les permite alcanzar una velocidad máxima de 220 km/h y acelerar hasta los 100 km/h en 3 segundos, utilizando una transmisión secuencial de cinco velocidades.
+
+        </p>
+
+        <p>
+            Esta potencia máxima puede utilizarse realmente en los entrenamientos y en las carreras, pero no durante la carrera real. Con una potencia total de 300 kW (400 CV), la potencia utilizable es de 150 kW (204 CV). 
+
+        </p>
+
+
+        <p>
+            Pero con el nuevo modo fanboost, la potencia utilizable aumenta en 30 kW (41 CV) durante un tiempo limitado de cinco segundos por carrera. Una cosa curiosa del fanboost es que solo pueden utilizarlo los tres pilotos que fueron votados por sus fans antes de la carrera. Esta medida está pensada para hacer la competición más atractiva a los nuevos adeptos.
+
+        </p>
+
+        <p>
+            El coche de carreras de Fórmula E pesa al menos 888 kilogramos con conductor incluido y mide casi cinco metros de largo, 1,8 metros de ancho y 1,25 metros de alto. La batería tiene una capacidad utilizable de 28 kWh.
+
+        </p>
+
+        <p>
+            Todos los coches que competirán para los diez equipos en la primera temporada serán los mismos. Simplemente, se personalizarán con los colores, los logotipos y los patrocinadores de los equipos.
+
+        </p>
+
+        <p>
+            En la segunda temporada esperamos ver nuevos desarrollos y prestaciones cada vez más potentes. Cada equipo podrá experimentar con diferentes cambios y desarrollos propios, al estilo de la Fórmula 1, donde la habilidad y la destreza de los ingenieros harán que ciertos coches sean más competitivos que otros.
+
+        </p>
+
+
+
+
+
+
+       
+            
+            
+            
+
+       
+    </div>
+
+    
+    
+
+
+  
+      <button onclick="_scrollTop()" class="arrow-up">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <svg version="1.1" width="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 493.472 493.472" style="enable-background:new 0 0 493.472 493.472;"
+          xml:space="preserve">
+          <g>
+            <g>
+              <path d="M246.738,0C110.69,0,0.01,110.692,0.01,246.732c0,136.064,110.68,246.74,246.728,246.74s246.724-110.676,246.724-246.74
+            C493.462,110.692,382.786,0,246.738,0z M361.094,296.68l-8.964,8.972c-2.02,2.012-5.564,2.012-7.576,0l-94.932-94.924
+            c-0.752-0.756-1.736-1.132-2.72-1.132s-1.976,0.376-2.732,1.132l-94.784,94.768c-2.004,1.996-5.548,1.996-7.56,0l-8.972-8.972
+            c-2.08-2.076-2.08-5.48,0-7.552l110.16-110.156c0.996-0.984,2.332-1.532,3.996-1.532c1.436,0,2.78,0.548,3.764,1.532
+            L361.09,289.128C363.174,291.212,363.174,294.604,361.094,296.68z" />
+            </g>
+          </g>
+        </svg>
+  
+      </button>
+
+      
+  
+  <footer>
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">OUR COMPANY</div>
+          <p>JIMA car dealership was founded in 2020 with two principles: sell a good product at a fair price and give
+            good service. Since then, thousands of customers have decided to buy their car at our dealership. Thanks
+            to their trust we continue to be the market leader in car sales. Our good work and the satisfaction of our
+            customers have made us the largest car dealer in the world. Stop looking for more dealerships, JIMA is
+            one of the companies with more history and reputation among car dealers nationwide.
+          </p>
+        </div>
+  
+      </div>
+      <div class="middle box">
+        <div class="topic">OUR SERVICES</div>
+        <div><a href="calculator.html#calculator-id">Calculator</a></div>
+        <div><a href="#">Cars</a></div>
+        <div><a href="#">Motorbikes</a></div>
+        <div><a href="#">Latest Sales</a></div>
+        <div><a href="faqs.html">FAQS</a></div>
+  
+      </div>
+      <div class="right box">
+        <div class="topic">SUBSCRIBE US</div>
+        <form action="#">
+          <input type="text" placeholder="Enter email address">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+        <div class="lower">
+          <div class="topic">CONTACT US</div>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>+03495 857 4599</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>contact@companyJIMA.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+  
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="JS/responsiveCards.js"></script>
+  
+  
+  </body>
+  
+  </html>
