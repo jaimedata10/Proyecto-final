@@ -98,7 +98,6 @@
 </script>
 
 <div class="overlay">
-
   <body>
 
     <div class="header-fixed">
@@ -106,17 +105,25 @@
       <div class="flex-container">
         <div class="flex-container">
           <div class="spacing-words">
-            <div class="spacing-divs">
-              Join us
-            </div>
-            <div class="spacing-divs">
-              Contact
-            </div>
+            <a href="index.html#footerID">
+              <div class="spacing-divs">
+                Contact us
+              </div>
+            </a>
+            <a href="index.html#footerID">
+              <div class="spacing-divs">
+                Subscribe us
+              </div>
+            </a>
+          
           </div>
         </div>
-        <div class="spacing-divs">
-          Client portal
-        </div>
+        <a href="index.html#footerID">
+          <div class="spacing-divs">
+            Our services
+          </div>
+        </a>
+       
       </div>
 
       <header>
@@ -145,16 +152,16 @@
                 </a></li>
 
               <div class="dropdown-container">
-                <button onclick="openDropdown()" class="dropdown-button">
+                <button onclick="openDropdown()" class="dropdown-button" id="arrow-button">
                   <div class="flex-containers">
-                    <a href="#" class="underlined">
+                    <div href="#" class="underlined">
                       <div class="refs">Our cars</div>
                       <img src="arrow.svg" class="arrow-svg">
-                    </a>
+                    </div>
                   </div>
                 </button>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="arrow-dropdown">
                   <ul class="dropdown-menu">
                     <li><a href="ourCars.html">Automobiles</a></li>
                     <li>Motorbikes</li>
