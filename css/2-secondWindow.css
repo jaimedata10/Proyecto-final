@@ -1,26 +1,41 @@
 .secondSection {
-    height: 100vh;
+    height: auto;
     background-color: rgb(249, 238, 224);
     padding-top: 50px;
 }
 
-.pack-containers {
+.second-window-title {
+    text-align: center;
+    color: rgb(61, 59, 59);
+    font-size: 60px;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 30px;
+}
+
+.description-aboutus {
+    text-align: center;
+    color: rgb(61, 59, 59);
+    font-size: 24px;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 100px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.align-card-persons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: -65px;
 }
 
-.pack-containers-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+.card-person {
+width: 273px;
+text-align: center;
+margin-bottom: 50px;
 }
 
-.container-cities {
+.circle-pictures {
     display: flex;
     border-collapse: collapse;
     display: inline-block;
@@ -32,47 +47,36 @@
     border-radius: 50%;
 }
 
-.second-window-title {
+.paragraph-style-profile {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
     text-align: center;
-    color: rgb(61, 59, 59);
-    font-size: 60px;
-    font-family: "Playfair Display", Georgia, serif;
-    margin-top: -2%;
-    margin-bottom: 9%;
 }
 
-
-.cards-containers {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.cards-containers-info {
-    display: flex;
-    flex-direction: column;
+.rectangle-info {
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
-    width: 245px;
-    height: 227px;
+    width: 272px;
+    height: 210px;
     border: 2px solid darkslategrey;
     border-radius: 13px;
-
-}
-
-.paragraph-style-profile {
-    margin-top: 10%;
-    font-weight: bold;
-    font-style: italic;
+    padding-top: 10px;
 }
 
 .info-text{
-    margin-top: -168px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 15px;
 }
 
+.info-subtext {
+    font-size: 14px;
+    margin: 5%;
+    text-align: justify;
+}
 
 
 /*
