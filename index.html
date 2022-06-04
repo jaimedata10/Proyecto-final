@@ -63,9 +63,7 @@
         <div>
           <nav>
             <ul>
-              <li><a class="menu underlined" href="#">
-                  <div class="refs">Menu</div>
-                </a></li>
+             
               <li class="hidden-bars">
                 <button class="open-button" onclick="openSidebar()">
                   <div class="column-bars-short"></div>
@@ -116,23 +114,19 @@
     </div>
 
 
-
-
-
-
     <main>
 
       <div class="full-carousel">
         <div style="margin-top:80px;">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-pause="false" data-interval="7550">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-pause="false">
                 <img class="d-block w-100" src="picPrincipal.jpg" alt="First slide">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-pause="false">
                 <img class="d-block w-100" src="entregaLlaves.jpg">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-pause="false">
                 <video autoplay loop muted id="player" width="100%" height="100%">
                   <source src="video.mp4" type="video/mp4">
                 </video>
@@ -170,18 +164,28 @@
     </main>
 
     <div class="sidebar">
-      <div class="align-sidebar">
-        <h1 class="title-sidebar">Mi contenido sidebar</h1>
+      <div class="spacing-cross-right">
         <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross">
-          <img src="equis.svg" class="cross-closing">
+          <img src="equis.svg" class="cross-closing2">
         </button>
+        
+        
       </div>
-      <h3 class="title-sidebar-two">¿Dónde te gustaría viajar?</h3>
+      <h1 class="title-sidebar">Content JIMA</h1>
+   
+      <li><a href="" class="title-sidebar-two"><div class="">About us</div></a></li>
+      <li><a href="" class="title-sidebar-two"><div class="">Calculator</div></a></li>
+      <li><a href="" class="title-sidebar-two"><div class="">Automobiles</div></a></li>
+      <li><a href="" class="title-sidebar-two"><div class="">Motorbikes</div></a></li>
+      <li><a href="" class="title-sidebar-two"><div class="">Latest News</div></a></li>
+      <li><a href="" class="title-sidebar-two"><div class="">FAQS</div></a></li>
+    
+
       <div class="pic-align-sidebar">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMONGQfVHow7RkPgbi3ZFOmikTBgsy8F16Nw&usqp=CAU"
-          class="pic-sidebar">
+        <img src="logo.png" class="logo2">
+        
       </div>
-      <h4 class="scroll-sidebar">Haz scroll para ver más</h4>
+      <h4 class="scroll-sidebar">Scroll for viewing more</h4>
       <div class="pic-align-sidebar">
         <img src="downArrow.svg">
       </div>
@@ -211,34 +215,39 @@
 
 <div class="fourthSection">
   <div class="center-div">
-    <div class="title-section">¿Qué opinan nuestros usuarios?</div>
+    <div class="title-section">What do our users think about us?</div>
     <div class="flex-cards">
       <div class="center-card">
-        <div class="title-card">Ofrecen lo que prometen</div>
+        <div class="title-card">Fantastic environment</div>
         <div class="stars-card">&#9733&#9733&#9733&#9733&#9733</div>
         <div>
-          <p class="text-card">Me consiguieron buenos precios para el C4 Cactus y el concesionario que me atendió fue
-            muy profesional durante el proceso de compra. Además, no te molestan con llamadas.</p>
+          <p class="text-card">They got me good prices on the C4 Cactus and the dealer that helped me was very professional during the buying process. Also, they don't bother you with calls.
+
+          </p>
         </div>
         <div class="review-card">Manuel Jiménez</div>
       </div>
 
       <div class="center-card">
-        <div class="title-card">Muy buena experiencia</div>
-        <div class="stars-card">&#9733&#9733&#9733&#9733&#9733</div>
+        <div class="title-card">Very good experience
+        </div>
+        <div class="stars-card">&#9733&#9733&#9733&#9733</div>
         <div>
-          <p class="text-card">Muy buena experiencia. He conseguido un
-            buen precio, y además, han sido muy amables conmigo.</p>
+          <p class="text-card">Very good experience. I got a good price, and also, they have been very kind to me.
+
+          </p>
         </div>
         <div class="review-card">Elvira Sánchez</div>
       </div>
 
       <div class="center-card">
-        <div class="title-card">Gran experiencia en JIMA</div>
+        <div class="title-card">Great time at JIMA
+        </div>
         <div class="stars-card">&#9733&#9733&#9733&#9733&#9733</div>
         <div>
-          <p class="text-card">La experiencia en JIMA ha sido muy buena. Receptivos en todo momento y amables. Una
-            elección perfecta.</p>
+          <p class="text-card">My time at JIMA has been extraordinary. Receptive at all times and friendly. It was a perfect choice.
+
+          </p>
         </div>
         <div class="review-card">Batiste Ramírez</div>
       </div>

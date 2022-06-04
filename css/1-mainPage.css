@@ -5,7 +5,6 @@
 
 body {
     margin: 0;
-    background: url("https://movilidadelectrica.com/wp-content/uploads/2020/02/Concesionario.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -99,9 +98,7 @@ li {
     list-style-type: none;
 }
 
-.menu {
-    display: none;
-}
+
 
 .hidden-bars {
     display: none;
@@ -205,6 +202,7 @@ img.logo {
 
 
 
+
 .carousel-control-next, .carousel-control-prev {
     height: auto;
 }
@@ -256,15 +254,6 @@ img.logo {
         display: none;
     }
 
-    .menu {
-        color: white;
-        list-style-type: none;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 125px;
-    }
 
     .hidden-bars {
         display: block;
@@ -287,7 +276,68 @@ img.logo {
         justify-content: space-around;
     }
 
+    .absolute-paragraph {
+        margin: 0px auto;
+        width: 70%;
+        position: relative;
+        padding-top: 600px;
+        padding-left: 0%;
+        opacity: 0.9;
+    }
+
+    .paragraph-description {
+
+
+    }
+
 }
+
+@media (max-width: 880px) {
+    .absolute-paragraph {
+        margin: 0px auto;
+        width: 70%;
+        position: relative;
+        padding-top: 580px;
+        padding-left: 0%;
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 820px) {
+    .absolute-paragraph {
+        margin: 0px auto;
+        width: 70%;
+        position: relative;
+        padding-top: 540px;
+        padding-left: 0%;
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 760px) {
+    .absolute-paragraph {
+        margin: 0px auto;
+        width: 70%;
+        position: relative;
+        padding-top: 500px;
+        padding-left: 0%;
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 700px) {
+    .absolute-paragraph {
+        margin: 0px auto;
+        width: 70%;
+        position: relative;
+        padding-top: 460px;
+        padding-left: 0%;
+        opacity: 0.9;
+    }
+}
+
+
+
 
 @media (max-width: 600px) {
 
@@ -299,13 +349,6 @@ img.logo {
         display: none;
     }
 
-    .menu {
-        color: white;
-        padding-top: 30px;
-        list-style-type: none;
-        text-decoration: none;
-        padding-top: 0px;
-    }
 
     .hidden-bars {
         display: block;
@@ -317,6 +360,15 @@ img.logo {
 
     .webdesign-text {
         width: 400px;
+    }
+
+    .absolute-paragraph {
+        margin: 0px auto;
+        width: 70%;
+        position: relative;
+        padding-top: 400px;
+        padding-left: 0%;
+        opacity: 0.9;
     }
 
 }

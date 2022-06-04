@@ -18,11 +18,31 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    float: right;
 }
 
 .cross-closing {
   margin-top: 18px;
+}
+
+.cross-closing2 {
+    margin-top: 18px;
+    width: 30px;
+    height: 30px;
+   
+  }
+
+.spacing-cross-right {
+    margin-right: 70px;
   
+}
+
+img.logo2 {
+    margin-top: 30px;
+    width: 180px;
+    height: 180px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
 }
 
 .title-sidebar {
@@ -30,7 +50,8 @@
     color: rgb(12, 12, 12);
     font-size: 45px;
     font-family: "Playfair Display", Georgia, serif;
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-top: 60px;
 }
 
 .align-sidebar {
@@ -56,9 +77,11 @@
 }
 
 .scroll-sidebar {
+    padding-top: 50px;
+    padding-bottom: 20px;
     text-align: center;
     color: rgb(12, 12, 12);
-    font-size: 15px;
+    font-size: 18px;
     font-family: "Playfair Display", Georgia, serif;
     margin-top: 20px;
 }
