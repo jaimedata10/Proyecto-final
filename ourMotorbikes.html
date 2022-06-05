@@ -4,7 +4,7 @@
 <head>
     <title>JIMA</title>
     <link rel="stylesheet" href="css/1-mainPage.css" title="Color">
-    <link rel="stylesheet" href="css/ourCars.css">
+    <link rel="stylesheet" href="css/ourBikes.css">
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/Footer.css">
     <link rel="stylesheet" href="css/menu.css" title="Color">
@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="css/sidebar.css" title="Color">
     <link rel="stylesheet" href="css/3-thirdWindow.css" title="Color">
     <link rel="stylesheet" href="css/4-fourthWindow.css" title="Color">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
 </head>
 
-<script src="JS/ourCars.js"></script>
-<script src="JS/mainPage.js"></script>
+<script src="JS/ourBikes.js"></script>
+<!-- <script src="JS/mainPage.js"></script> -->
 
 <body>
     <div class="backImg">
@@ -74,53 +76,53 @@
         <!-- MAIN PAGE -->
         <div class="main-ourCars">
 
-            <button class="cards-ourCars" onclick="openSidebar('audi')">
-                <div class="logoMarca-ourCars"><img src="photos/audi/audi.svg" alt="downArrow"></div>
-                <div class="nombreMarca-ourCars">AUDI</div>
-            </button>
-            <button class="cards-ourCars" onclick="openSidebar('bmw')">
-                <div class="logoMarca-ourCars"><img src="photos/bmw/bmw.svg" alt="downArrow"></div>
+            <button class="cards-ourCars" onclick="openSidebar('bmwM')">
+                <div class="logoMarca-ourCars"><img src="photos/bmwM/logo_bmwM.png" alt=""></div>
                 <div class="nombreMarca-ourCars">BMW</div>
             </button>
-            <button class="cards-ourCars" onclick="openSidebar('citroen')">
-                <div class="logoMarca-ourCars"><img src="photos/citroen/citroen.svg" alt="downArrow"></div>
-                <div class="nombreMarca-ourCars">CITROEN</div>
+            <button class="cards-ourCars" onclick="openSidebar('brixton')">
+                <div class="logoMarca-ourCars"><img src="photos/brixton/logo_brixton.png" alt=""></div>
+                <div class="nombreMarca-ourCars">BRIXTON</div>
             </button>
-            <button class="cards-ourCars" onclick="openSidebar('ford')">
-                <div class="logoMarca-ourCars"><img src="photos/ford/ford.svg" alt="downArrow"></div>
-                <div class="nombreMarca-ourCars">FORD</div>
+            <button class="cards-ourCars" onclick="openSidebar('ducati')">
+                <div class="logoMarca-ourCars"><img src="photos/ducati/logo_ducati.png" alt=""></div>
+                <div class="nombreMarca-ourCars">DUCATI</div>
             </button>
-            <button class="cards-ourCars" onclick="openSidebar('honda')">
-                <div class="logoMarca-ourCars"><img src="photos/honda/honda.svg" alt="downArrow"></div>
+            <button class="cards-ourCars" onclick="openSidebar('hondaM')">
+                <div class="logoMarca-ourCars"><img src="photos/hondaM/logo_honda.png" alt=""></div>
                 <div class="nombreMarca-ourCars">HONDA</div>
             </button>
-            <button class="cards-ourCars" onclick="openSidebar('kia')">
-                <div class="logoMarca-ourCars"><img src="photos/kia/kia.svg" alt="downArrow"></div>
-                <div class="nombreMarca-ourCars">KIA</div>
+            <button class="cards-ourCars" onclick="openSidebar('kawasaki')">
+                <div class="logoMarca-ourCars"><img src="photos/kawasaki/logo_kawasaki.png" alt=""></div>
+                <div class="nombreMarca-ourCars">KAWASAKI</div>
             </button>
-            <button class="cards-ourCars" onclick="openSidebar('mercedes')">
-                <div class="logoMarca-ourCars"><img src="photos/mercedes/mercedes.svg" alt="downArrow"></div>
-                <div class="nombreMarca-ourCars">MERCEDES</div>
+            <button class="cards-ourCars" onclick="openSidebar('ktm')">
+                <div class="logoMarca-ourCars"><img src="photos/ktm/logo_ktm.png" alt=""></div>
+                <div class="nombreMarca-ourCars">KTM</div>
             </button>
-            <button class="cards-ourCars" onclick="openSidebar('nissan')">
-                <div class="logoMarca-ourCars"><img src="photos/nissan/nissan.svg" alt="downArrow"></div>
-                <div class="nombreMarca-ourCars">NISSAN</div>
+            <button class="cards-ourCars" onclick="openSidebar('kymco')">
+                <div class="logoMarca-ourCars"><img src="photos/kymco/logo_kymco.png" alt=""></div>
+                <div class="nombreMarca-ourCars">KYMCO</div>
             </button>
-            <button class="cards-ourCars" onclick="openSidebar('opel')">
-                <div class="logoMarca-ourCars"><img src="photos/opel/opel.svg" alt="downArrow"></div>
-                <div class="nombreMarca-ourCars">OPEL</div>
-            </button>
-            <button class="cards-ourCars" onclick="openSidebar('peugeot')">
-                <div class="logoMarca-ourCars"><img src="photos/peugeot/peugeot.svg" alt="downArrow"></div>
+            <button class="cards-ourCars" onclick="openSidebar('peugeotM')">
+                <div class="logoMarca-ourCars"><img src="photos/peugeotM/logo_peugeotM.png" alt=""></div>
                 <div class="nombreMarca-ourCars">PEUGEOT</div>
             </button>
-            <button class="cards-ourCars" onclick="openSidebar('seat')">
-                <div class="logoMarca-ourCars"><img src="photos/seat/seat.svg" alt="downArrow"></div>
-                <div class="nombreMarca-ourCars">SEAT</div>
+            <button class="cards-ourCars" onclick="openSidebar('piaggio')">
+                <div class="logoMarca-ourCars"><img src="photos/piaggio/logo_piaggio.png" alt=""></div>
+                <div class="nombreMarca-ourCars">PIAGGIO</div>
             </button>
-            <button class="cards-ourCars" onclick="openSidebar('volkswagen')">
-                <div class="logoMarca-ourCars"><img src="photos/volkswagen/volkswagen.svg" alt="downArrow"></div>
-                <div class="nombreMarca-ourCars">VOLKSWAGEN</div>
+            <button class="cards-ourCars" onclick="openSidebar('suzuki')">
+                <div class="logoMarca-ourCars"><img src="photos/suzuki/logo_suzuki.png" alt=""></div>
+                <div class="nombreMarca-ourCars">SUZUKI</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('sym')">
+                <div class="logoMarca-ourCars"><img src="photos/sym/logo_sym.png" alt=""></div>
+                <div class="nombreMarca-ourCars">SYM</div>
+            </button>
+            <button class="cards-ourCars" onclick="openSidebar('yamaha')">
+                <div class="logoMarca-ourCars"><img src="photos/yamaha/logo_yamaha.png" alt=""></div>
+                <div class="nombreMarca-ourCars">YAMAHA</div>
             </button>
         </div>
         <!-- SIDEBAR-->
@@ -174,35 +176,38 @@
             </div>
         </div>
         <!-- FOOTER -->
-        <footer>
+
+        <footer id="footerID">
             <div class="content">
                 <div class="left box">
                     <div class="upper">
                         <div class="topic">OUR COMPANY</div>
-                        <p>JIMA car dealership was founded in 2020 with two principles: sell a good product at a fair
-                            price
-                            and give good service.
-                            a fair price and to give a good service. Since then, thousands of customers have decided to
-                            buy
-                            their car at our dealership. Thanks to their trust we continue to be the market leader in
-                            car
-                            sales.
-                            in car sales. Our good work and the satisfaction of our customers have made us the largest
-                            car
-                            dealer in the world.
-                            the largest car dealership in Spain. Stop looking for more dealerships, JIMA is
+                        <p class="para1-showing">JIMA car dealership was founded in 2020 with two principles: sell a
+                            good product at a fair price and give
+                            good service. Since then, thousands of customers have decided to buy their car at our
+                            dealership. Thanks
+                            to their trust we continue to be the market leader in car sales. Our good work and the
+                            satisfaction of our
+                            customers have made us the largest car dealer in the world. Stop looking for more
+                            dealerships, JIMA is
                             one of the companies with more history and reputation among car dealers nationwide.
-                            nationally.</p>
+                        </p>
+                        <p class="para1-hidden">JIMA car dealership was founded in 2020 with two principles: sell a good
+                            product at a fair price and give
+                            good service. JIMA is one of the companies with more history and reputation.
+                        </p>
                     </div>
 
                 </div>
                 <div class="middle box">
                     <div class="topic">OUR SERVICES</div>
                     <div><a href="index.html#aboutus-id">About us</a></div>
-                    <div><a href="calculator.html">Calculator</a></div>
+                    <div><a href="calculator.html#calculator-id">Calculator</a></div>
                     <div><a href="ourCars.html">Cars</a></div>
-                    <div><a href="latestNews.html">Latest News</a></div>
+                    <div><a href="ourMotorbikes.html">Motorbikes</a></div>
+                    <div><a href="latestNews.html">Latest news</a></div>
                     <div><a href="faqs.html">FAQS</a></div>
+
                 </div>
                 <div class="right box">
                     <div class="topic">SUBSCRIBE US</div>
@@ -210,17 +215,18 @@
                         <input type="text" placeholder="Enter email address">
                         <input type="submit" name="" value="Send">
                         <div class="media-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"
+                                target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </form>
                     <div class="lower">
                         <div class="topic">CONTACT US</div>
                         <div class="phone">
-                            <a href="#"><i class="fas fa-phone-volume"></i>+03495 857 4599</a>
+                            <a href="#"><i class="fas fa-phone-volume"></i>+034 95 857 45 99</a>
                         </div>
                         <div class="email">
                             <a href="#"><i class="fas fa-envelope"></i>contact@companyJIMA.com</a>

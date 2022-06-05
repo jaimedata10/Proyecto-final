@@ -25,10 +25,10 @@ function myMedia(Price, Entrance, Months, tae, cont) {
 
         if (cont == 1 && sumaDivide>0 && Price> 0 && Entrance > 0) {
 
-            document.getElementById("resultadoFinal").innerHTML = `${sumaDivide}$`;
-            document.getElementById("Prize").innerHTML = `${Price}$`;
-            document.getElementById("Entrance").innerHTML = `${Entrance}$`;
-            document.getElementById("Months").innerHTML = `${Months}$`;
+            document.getElementById("resultadoFinal").innerHTML = `${sumaDivide}€`;
+            document.getElementById("Prize").innerHTML = `${Price}€`;
+            document.getElementById("Entrance").innerHTML = `${Entrance}€`;
+            document.getElementById("Months").innerHTML = `${Months}€`;
         }
         else{
             document.getElementById("demo").innerHTML = "You have a negative number";
