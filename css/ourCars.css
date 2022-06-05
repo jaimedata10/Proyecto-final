@@ -270,6 +270,14 @@ body{
     .backImg {
         margin: 80px 0 0 0;
     }
+
+    .para1-showing {
+        display: none;
+    }
+
+    .para1-hidden {
+        display: block;
+    }
 }
 
 @media (max-width: 700) {
@@ -278,3 +286,5 @@ body{
         width: inherit;
     }
 }
+
+
