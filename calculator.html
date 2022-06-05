@@ -36,15 +36,6 @@
 </head>
 
 <script>
-  function openSidebar() {
-    console.log('sidebar');
-    document.querySelector('.sidebar').classList.add('open');
-  }
-
-  function closeSidebar() {
-    console.log('sidebar');
-    document.querySelector('.sidebar').classList.remove('open');
-  }
 
   function openDropdown() {
     var dropdownContent = document.querySelector('.dropdown-content');
@@ -126,7 +117,7 @@
                 <button onclick="openDropdown()" class="dropdown-button">
                   <div class="flex-containers">
                     <a href="#" class="underlined">
-                      <div class="refs">Our cars</div>
+                      <div class="refs">Our vehicles</div>
                       <img src="arrow.svg" class="arrow-svg">
                     </a>
                   </div>
@@ -175,8 +166,9 @@
     </button>
 
 
-<div class="calculatorSection" id="calculator-id"  >
-  <div class="third-window-title" >Calculate your financial offer</div>
+<div class="calculatorSection" id="calculator-id">
+  <div class="third-window-title">Welcome to our calculator</div>
+  <div class="third-window-subtitle">(Calculate your financial offer)</div>
 
 
   <div class="two-cards">

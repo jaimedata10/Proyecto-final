@@ -25,15 +25,7 @@
 </head>
 
 <script>
-  function openSidebar() {
-    console.log('sidebar');
-    document.querySelector('.sidebar').classList.add('open');
-  }
 
-  function closeSidebar() {
-    console.log('sidebar');
-    document.querySelector('.sidebar').classList.remove('open');
-  }
 
   function openDropdown() {
     var dropdownContent = document.querySelector('.dropdown-content');
@@ -64,36 +56,6 @@
       arrow.classList.remove('visible');
     }
   });
-
-
-  //Script responsiveCards
-  function hideModal() {
-    const modal = document.querySelector('.modalResponsive');
-    modal.classList.remove('showResponsive');
-  }
-
-  function showModal(param1, param2, param3) {
-    const modal = document.querySelector('.modalResponsive');
-    document.querySelector('#imageResponsive').src = param1;
-    document.querySelector('#titleResponsive').innerHTML = param2;
-    document.querySelector('#descriptionResponsive').innerHTML = param3;
-    modal.classList.add('showResponsive');
-  }
-
-  function openFullscreen(elem) {
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { /* Safari */
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE11 */
-      elem.msRequestFullscreen();
-    }
-  }
-
-  function viewFullScreen() {
-    var img = document.querySelector('.imgModalResponsive');
-    openFullscreen(img);
-  }
 
 </script>
 
@@ -131,15 +93,6 @@
         <div>
           <nav>
             <ul>
-             
-              <li class="hidden-bars">
-                <button class="open-button" onclick="openSidebar()">
-                  <div class="column-bars-short"></div>
-                  <div class="column-bars-long"></div>
-                  <div class="column-bars-long"></div>
-                  <div class="column-bars-short"></div>
-                </button>
-              </li>
 
               <li><a href="index.html#aboutus-id" class="underlined ">
                   <div class="refs">About us</div>
@@ -153,7 +106,7 @@
                 <button onclick="openDropdown()" class="dropdown-button" id="arrow-button">
                   <div class="flex-containers">
                     <div href="#" class="underlined">
-                      <div class="refs">Our cars</div>
+                      <div class="refs">Our vehicles</div>
                       <img src="arrow.svg" class="arrow-svg">
                     </div>
                   </div>
@@ -289,29 +242,6 @@
         </div>
       </div>
 
-
-
-
-
-
-
-      <div class="sidebar">
-        <div class="align-sidebar">
-          <h1 class="title-sidebar">Mi contenido sidebar</h1>
-          <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross">
-            <img src="equis.svg" class="cross-closing">
-          </button>
-        </div>
-        <h3 class="title-sidebar-two">¿Dónde te gustaría viajar?</h3>
-        <div class="pic-align-sidebar">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMONGQfVHow7RkPgbi3ZFOmikTBgsy8F16Nw&usqp=CAU"
-            class="pic-sidebar">
-        </div>
-        <h4 class="scroll-sidebar">Haz scroll para ver más</h4>
-        <div class="pic-align-sidebar">
-          <img src="downArrow.svg">
-        </div>
-      </div>
 
       <button onclick="_scrollTop()" class="arrow-up">
         <?xml version="1.0" encoding="iso-8859-1"?>
