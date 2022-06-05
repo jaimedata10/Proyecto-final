@@ -65,6 +65,7 @@ margin-bottom: 50px;
     border: 2px solid darkslategrey;
     border-radius: 13px;
     padding-top: 10px;
+    background: linear-gradient(to bottom, #e575757a, white);
 }
 
 .info-text{
