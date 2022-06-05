@@ -237,7 +237,7 @@ img.logo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 2%;
+    margin-bottom: 30px;
 }
 
 .cardsResponsive {
@@ -306,7 +306,8 @@ img.logo {
 }
 
 .bottomCardResponsive {
-    display: flex;
+    margin-top: 20px;
+   
     justify-content: space-between;
 }
 
@@ -316,8 +317,8 @@ img.logo {
 }
 
 .paragraphResponsive {
-    padding-left: 9%;
-    margin-top: 4%;
+    padding-left: 10px;
+    margin-top: 10px;
 }
 
 .IconResponsive {
