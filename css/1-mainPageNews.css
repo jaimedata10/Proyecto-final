@@ -189,7 +189,7 @@ img.logo {
     height: 80px;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
-    margin-left: 2%;
+    margin-left: 40px;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -224,11 +224,10 @@ img.logo {
 
 .thirdSection {
     height: auto;
-    padding-top: 100px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 70px;
     padding: 5%;
 }
