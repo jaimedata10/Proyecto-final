@@ -238,6 +238,9 @@ img.logo {
     margin: 10px;
 }
 
+.para1-hidden {
+    display: none;
+}
 
 
 
@@ -290,10 +293,14 @@ img.logo {
         opacity: 0.9;
     }
 
-    .paragraph-description {
-
-
+    .para1-showing {
+        display: none;
     }
+
+    .para1-hidden {
+        display: block;
+    }
+  
 
 }
 
@@ -396,3 +403,6 @@ a {
     text-decoration: none !important;
     background-color: transparent;
 }
+
+
+
