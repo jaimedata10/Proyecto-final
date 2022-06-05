@@ -33,7 +33,7 @@
 .card-person {
 width: 273px;
 text-align: center;
-margin-bottom: 50px;
+margin-bottom: 80px;
 }
 
 .circle-pictures {
@@ -65,6 +65,7 @@ margin-bottom: 50px;
     border: 2px solid darkslategrey;
     border-radius: 13px;
     padding-top: 10px;
+    background: linear-gradient(to bottom, #e575757a, white);
 }
 
 .info-text{
