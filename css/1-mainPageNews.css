@@ -404,6 +404,7 @@ img.logo {
     }
 }
 
+
 @media (max-width: 960px) {
 
     .flex-container {
@@ -443,6 +444,14 @@ img.logo {
     .pack-containers {
         display: flex;
         justify-content: space-around;
+    }
+
+    .para1-showing {
+        display: none;
+    }
+
+    .para1-hidden {
+        display: block;
     }
 
 }

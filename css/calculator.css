@@ -169,3 +169,17 @@ margin-bottom: 50px;
     padding-right: 5px;
 }
 
+
+@media (max-width: 960px) {
+
+
+    .para1-showing {
+        display: none;
+    }
+
+    .para1-hidden {
+        display: block;
+    }
+  
+
+}

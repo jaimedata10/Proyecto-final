@@ -75,3 +75,12 @@ a {
     }
 }
 
+@media (max-width: 960px) {
+.para1-showing {
+    display: none;
+}
+
+.para1-hidden {
+    display: block;
+}
+}
