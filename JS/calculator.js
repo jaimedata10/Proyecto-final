@@ -25,9 +25,9 @@ function myMedia(Price, Entrance, Months, tae, cont) {
 
         if (cont == 1) {
 
-            document.getElementById("resultadoFinal").innerHTML = `${sumaDivide}€`;
-            document.getElementById("Prize").innerHTML = `${Price}€`;
-            document.getElementById("Entrance").innerHTML = `${Entrance}€`;
+            document.getElementById("resultadoFinal").innerHTML = `${sumaDivide}$`;
+            document.getElementById("Prize").innerHTML = `${Price}$`;
+            document.getElementById("Entrance").innerHTML = `${Entrance}$`;
             document.getElementById("Months").innerHTML = `${Months}`;
         }
 
