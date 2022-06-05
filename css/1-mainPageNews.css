@@ -486,6 +486,10 @@ img.logo {
         width: 400px;
     }
 
+    .thirdSection {
+      justify-content: center;
+    }
+
 }
 
 .header-fixed {
