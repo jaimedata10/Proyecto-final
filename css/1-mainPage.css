@@ -17,6 +17,10 @@ body {
     width: 100%;
     overflow: hidden;
     position: relative;
+    background-image: url("cinerataques-a-concesionarios.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .flex-container {
@@ -197,7 +201,7 @@ img.logo {
     height: 80px;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
-    margin-left: 2%;
+    margin-left: 40px;
 }
 
 
@@ -385,4 +389,9 @@ img.logo {
 .redContenedor {
     background-color: red;
     width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+    background-color: transparent;
 }
