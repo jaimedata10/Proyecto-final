@@ -78,17 +78,7 @@
                 <div>
                     <nav>
                         <ul>
-                            <li><a class="menu underlined" href="#">
-                                    <div class="refs">Menu</div>
-                                </a></li>
-                            <li class="hidden-bars">
-                                <button class="open-button" onclick="openSidebar()">
-                                    <div class="column-bars-short"></div>
-                                    <div class="column-bars-long"></div>
-                                    <div class="column-bars-long"></div>
-                                    <div class="column-bars-short"></div>
-                                </button>
-                            </li>
+                     
 
                             <li><a href="index.html#aboutus-id" class="underlined ">
                                     <div class="refs">About us</div>
@@ -99,14 +89,14 @@
                                 </a></li>
 
                             <div class="dropdown-container">
-                                <button onclick="openDropdown()" class="dropdown-button" id="arrow-button">
+                                <button onclick="openDropdown()" class="dropdown-button">
                                     <div class="flex-containers">
-                                        <div href="#" class="underlined">
-                                            <div class="refs">Our vehicles</div>
-                                            <img src="arrow.svg" class="arrow-svg">
-                                        </div>
+                                      <a href="#" class="underlined">
+                                        <div class="refs">Our vehicles</div>
+                                        <img src="arrow.svg" class="arrow-svg">
+                                      </a>
                                     </div>
-                                </button>
+                                  </button>
 
                                 <div class="dropdown-content" id="arrow-dropdown">
                                     <ul class="dropdown-menu">
@@ -130,7 +120,7 @@
 
         </div>
 
-
+        <div class="window-title-cars">Discover the latest news related to the motor world</div>
         <div class="thirdSection">
 
 
@@ -180,7 +170,7 @@
                         <div class="bottomCardResponsive">
                             <div>
                                 <h2 class="cardsTitleResponsive">Best cars for families</h2>
-                                <p class="paragraphResponsive">Less than 15000$</p>
+                                <p class="paragraphResponsive">Less than 18000€</p>
                             </div>
                         </div>
                     </div>
@@ -299,29 +289,6 @@
 
 
 
-
-
-
-
-        <div class="sidebar">
-            <div class="align-sidebar">
-                <h1 class="title-sidebar">Mi contenido sidebar</h1>
-                <button tabindex="-1" onclick="closeSidebar()" class="hidden-button-cross">
-                    <img src="equis.svg" class="cross-closing">
-                </button>
-            </div>
-            <h3 class="title-sidebar-two">¿Dónde te gustaría viajar?</h3>
-            <div class="pic-align-sidebar">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMONGQfVHow7RkPgbi3ZFOmikTBgsy8F16Nw&usqp=CAU"
-                    class="pic-sidebar">
-            </div>
-            <h4 class="scroll-sidebar">Haz scroll para ver más</h4>
-            <div class="pic-align-sidebar">
-                <img src="downArrow.svg">
-            </div>
-
-        </div>
-
         <button onclick="_scrollTop()" class="arrow-up">
             <?xml version="1.0" encoding="iso-8859-1"?>
             <svg version="1.1" width="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -340,13 +307,6 @@
 
         </button>
 </div>
-
-
-
-
-
-
-
 
 
 
@@ -371,10 +331,11 @@
         </div>
         <div class="middle box">
             <div class="topic">OUR SERVICES</div>
+            <div><a href="">About us</a></div>
             <div><a href="calculator.html#calculator-id">Calculator</a></div>
-            <div><a href="#">Cars</a></div>
+            <div><a href="ourCars.html">Cars</a></div>
             <div><a href="#">Motorbikes</a></div>
-            <div><a href="#">Latest Sales</a></div>
+            <div><a href="latestNews.html">Latest news</a></div>
             <div><a href="faqs.html">FAQS</a></div>
 
         </div>
@@ -395,7 +356,7 @@
             <div class="lower">
                 <div class="topic">CONTACT US</div>
                 <div class="phone">
-                    <a href="#"><i class="fas fa-phone-volume"></i>+03495 857 4599</a>
+                    <a href="#"><i class="fas fa-phone-volume"></i>+034 95 857 45 99</a>
                 </div>
                 <div class="email">
                     <a href="#"><i class="fas fa-envelope"></i>contact@companyJIMA.com</a>

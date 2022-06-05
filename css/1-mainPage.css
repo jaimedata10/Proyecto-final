@@ -17,7 +17,7 @@ body {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-image: url("cinerataques-a-concesionarios.jpg");
+    background-image: url("https://neomotor.sport.es/media/2020/08/cinerataques-a-concesionarios.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -231,6 +231,7 @@ img.logo {
     background-color: #f2e5e4;
     border-radius: 30px;
     margin: 5px;
+    text-align: justify;
 }
 
 .padmar {
