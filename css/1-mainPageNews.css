@@ -286,6 +286,11 @@ img.logo {
     text-align: center;
 }
 
+a {
+    color: #007bff;
+    text-decoration: none !important;
+    background-color: transparent;
+}
 
 .myButtonResponsive {
     margin-top: 22%;
