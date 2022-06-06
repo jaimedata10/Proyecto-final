@@ -4,7 +4,7 @@ function openSidebar(brand) {
     document.querySelector('.sidebar-ourCars').classList.add('open');
     actualBrand = brand;
     console.log(actualBrand);
-    chargePhotos();
+    chargephotosVehicules();
 }
 
 function closeSidebar() {
@@ -13,100 +13,100 @@ function closeSidebar() {
 }   
 
 const motos = {
-    'bmwM': [{ model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/bmwM/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/bmwM/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/bmwM/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '17.000&#8364', srcRute: `photos/bmwM/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '30.000&#8364', srcRute: `photos/bmwM/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '85.000&#8364', srcRute: `photos/bmwM/models/car6.png` }],
+    'bmwM': [{ model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/bmwM/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/bmwM/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/bmwM/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '17.000&#8364', srcRute: `photosVehicules/bmwM/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '30.000&#8364', srcRute: `photosVehicules/bmwM/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '85.000&#8364', srcRute: `photosVehicules/bmwM/models/car6.png` }],
 
-    'brixton': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/brixton/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/brixton/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/brixton/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/brixton/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/brixton/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/brixton/models/car6.png` }],
+    'brixton': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/brixton/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/brixton/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/brixton/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/brixton/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/brixton/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/brixton/models/car6.png` }],
     
-    'ducati': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/ducati/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/ducati/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/ducati/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/ducati/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/ducati/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/ducati/models/car6.png` }],
+    'ducati': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/ducati/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/ducati/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/ducati/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/ducati/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/ducati/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/ducati/models/car6.png` }],
     
-    'hondaM': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/hondaM/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/hondaM/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/hondaM/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/hondaM/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/hondaM/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/hondaM/models/car6.png` }],
+    'hondaM': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/hondaM/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/hondaM/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/hondaM/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/hondaM/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/hondaM/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/hondaM/models/car6.png` }],
     
-    'kawasaki': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/kawasaki/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/kawasaki/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/kawasaki/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/kawasaki/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/kawasaki/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/kawasaki/models/car6.png` }],
+    'kawasaki': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/kawasaki/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/kawasaki/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/kawasaki/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/kawasaki/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/kawasaki/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/kawasaki/models/car6.png` }],
     
-    'ktm': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/ktm/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/ktm/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/ktm/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/ktm/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/ktm/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/ktm/models/car6.png` }],
+    'ktm': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/ktm/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/ktm/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/ktm/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/ktm/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/ktm/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/ktm/models/car6.png` }],
     
-    'kymco': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/kymco/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/kymco/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/kymco/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/kymco/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/kymco/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/kymco/models/car6.png` }],
+    'kymco': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/kymco/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/kymco/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/kymco/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/kymco/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/kymco/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/kymco/models/car6.png` }],
     
-    'peugeotM': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/peugeotM/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/peugeotM/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/peugeotM/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/peugeotM/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/peugeotM/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/peugeotM/models/car6.png` }],
+    'peugeotM': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/peugeotM/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/peugeotM/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/peugeotM/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/peugeotM/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/peugeotM/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/peugeotM/models/car6.png` }],
 
-    'piaggio': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/piaggio/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/piaggio/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/piaggio/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/piaggio/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/piaggio/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/piaggio/models/car6.png` }],
+    'piaggio': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/piaggio/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/piaggio/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/piaggio/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/piaggio/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/piaggio/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/piaggio/models/car6.png` }],
 
-    'suzuki': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/suzuki/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/suzuki/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/suzuki/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/suzuki/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/suzuki/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/suzuki/models/car6.png` }],
+    'suzuki': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/suzuki/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/suzuki/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/suzuki/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/suzuki/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/suzuki/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/suzuki/models/car6.png` }],
 
-    'sym': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/sym/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/sym/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/sym/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/sym/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/sym/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/sym/models/car6.png` }],
+    'sym': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/sym/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/sym/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/sym/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/sym/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/sym/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/sym/models/car6.png` }],
 
-    'yamaha': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photos/yamaha/models/car1.png` },
-    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photos/yamaha/models/car2.png` },
-    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photos/yamaha/models/car3.png` },
-    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photos/yamaha/models/car4.png` },
-    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photos/yamaha/models/car5.png` },
-    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photos/yamaha/models/car6.png` }],
+    'yamaha': [{ model: 'Serie 1', hp: '150hp', price: '10.000&#8364', srcRute: `photosVehicules/yamaha/models/car1.png` },
+    { model: 'Serie 1', hp: '150hp', price: '25.000&#8364', srcRute: `photosVehicules/yamaha/models/car2.png` },
+    { model: 'Serie 1', hp: '150hp', price: '19.000&#8364', srcRute: `photosVehicules/yamaha/models/car3.png` },
+    { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/yamaha/models/car4.png` },
+    { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/yamaha/models/car5.png` },
+    { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/yamaha/models/car6.png` }],
 }
 
 
 
-function chargePhotos() {
-    var carPhoto1 = document.querySelector('#carPhoto1').src = `photos/${actualBrand}/models/car1.png`;
-    var carPhoto2 = document.querySelector('#carPhoto2').src = `photos/${actualBrand}/models/car2.png`;
-    var carPhoto3 = document.querySelector('#carPhoto3').src = `photos/${actualBrand}/models/car3.png`;
-    var carPhoto4 = document.querySelector('#carPhoto4').src = `photos/${actualBrand}/models/car4.png`;
-    var carPhoto5 = document.querySelector('#carPhoto5').src = `photos/${actualBrand}/models/car5.png`;
-    var carPhoto6 = document.querySelector('#carPhoto6').src = `photos/${actualBrand}/models/car6.png`;
+function chargephotosVehicules() {
+    var carPhoto1 = document.querySelector('#carPhoto1').src = `photosVehicules/${actualBrand}/models/car1.png`;
+    var carPhoto2 = document.querySelector('#carPhoto2').src = `photosVehicules/${actualBrand}/models/car2.png`;
+    var carPhoto3 = document.querySelector('#carPhoto3').src = `photosVehicules/${actualBrand}/models/car3.png`;
+    var carPhoto4 = document.querySelector('#carPhoto4').src = `photosVehicules/${actualBrand}/models/car4.png`;
+    var carPhoto5 = document.querySelector('#carPhoto5').src = `photosVehicules/${actualBrand}/models/car5.png`;
+    var carPhoto6 = document.querySelector('#carPhoto6').src = `photosVehicules/${actualBrand}/models/car6.png`;
 }
 
 function closeModal() {
