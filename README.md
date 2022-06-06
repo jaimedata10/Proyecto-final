@@ -1,5 +1,5 @@
 
-# JIMA dealer website.
+# JIMA dealer website
 
 JIMA car dealership was founded in 2020 with two principles: sell a good product at a fair price and give good service. Since then, thousands of customers
 have decided to buy their car at our dealership. Thanks to their trust we continue to be the market leader in car sales. Our good work and the satisfaction
