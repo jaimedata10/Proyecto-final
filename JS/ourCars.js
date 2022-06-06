@@ -129,6 +129,6 @@ function openModal(value) {
     model.innerHTML = `Model: ${car.model}`;
     hPower.innerHTML = `Horse power: ${car.hp}`;
     price.innerHTML = `Price: ${car.price}`;
-    carLogo.src = `photos/${actualBrand}/${actualBrand}.svg`
+    carLogo.src = `photosVehicules/${actualBrand}/${actualBrand}.svg`
 
 }

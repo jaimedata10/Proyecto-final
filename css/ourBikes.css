@@ -2,6 +2,7 @@ li {
     list-style-type: none;
     font-size: x-large;
     font-weight: 400 !important;
+    color: white;
 }
 
 body{
@@ -208,6 +209,7 @@ body{
     flex-flow: column;
     position: relative;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .imgModal-ourCars {
@@ -217,12 +219,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .imgModal-ourCars>Img {
     margin-top: 15px;
-    width: 450px;
+    height: -webkit-fill-available;
 }
 
 .modalContent-ourCars{
@@ -231,6 +232,7 @@ body{
     align-items: center;
     justify-content: space-around;
     align-content: center;
+    background-color: #386194;
 }
 
 .carValuesModal-ourCars{
