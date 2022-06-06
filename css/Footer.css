@@ -29,7 +29,7 @@ a {
 
 footer .content .box {
   width: 33%;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 
 footer .content .topic {
@@ -39,10 +39,6 @@ footer .content .topic {
   margin-bottom: 16px;
 }
 
-/*
-footer .content p{
-  text-align: justify;
-}*/
 footer .content .lower .topic {
   margin: 24px 0 5px 0;
 }
