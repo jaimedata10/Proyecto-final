@@ -28,7 +28,7 @@
   }
 
 document.addEventListener('click', function(e) {
-  const clickedPaths = e.path; 
+  const clickedPaths = Event.composedPath(); 
   const button = document.querySelector('.dropdown-button');
   const dropdownContent = document.querySelector('.dropdown-content');
   var svgIcon = document.querySelector('.arrow-svg');
