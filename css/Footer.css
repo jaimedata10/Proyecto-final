@@ -60,6 +60,10 @@ margin-top: 40px;
 
 }
 
+.para1-hidden {
+  display: none;
+  color: white;
+}
 
 .right_box{
     
@@ -68,3 +72,14 @@ margin-top: 40px;
 footer a:hover {
     color: #eb2f06;
   }
+
+
+  @media (max-width: 960px) {
+    .paragraph-foot {
+        display: none;
+    }
+
+    .para1-hidden {
+        display: block;
+    }
+}
