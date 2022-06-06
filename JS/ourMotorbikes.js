@@ -13,7 +13,7 @@ function closeSidebar() {
 }   
 
 const motos = {
-    'bmw': [{ model: 'F900XR', hp: '105hp', price: '11.950&#8364', srcRute: `photosVehicules/bmwM/models/car1.png` },
+    'bmwM': [{ model: 'F900XR', hp: '105hp', price: '11.950&#8364', srcRute: `photosVehicules/bmwM/models/car1.png` },
     { model: 'R NINE T SCRAMBLER', hp: '109hp', price: '14.000&#8364', srcRute: `photosVehicules/bmwM/models/car2.png` },
     { model: 'R 1250 GS', hp: '136hp', price: '20.000&#8364', srcRute: `photosVehicules/bmwM/models/car3.png` },
     { model: 'K 1600', hp: '160hp', price: '33.000&#8364', srcRute: `photosVehicules/bmwM/models/car4.png` },
