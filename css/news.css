@@ -530,8 +530,11 @@ a {
 
 p{
     width:90%;
-    margin-left: 5%;
     text-align: justify;
+}
+
+.paragraph-margin-news {
+    margin-left: 5%;
 }
 
 .imageNews1{
