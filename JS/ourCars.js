@@ -96,8 +96,6 @@ const coches = {
     { model: 'Tiguan', hp: '200hp', price: '30.000&#8364', srcRute: `photosVehicules/volkswagen/models/car4.png` },
     { model: 'Artenon', hp: '210hp', price: '36.000&#8364', srcRute: `photosVehicules/volkswagen/models/car5.png` },
     { model: 'T-Cross', hp: '140hp', price: '35.000&#8364', srcRute: `photosVehicules/volkswagen/models/car6.png` }],
-
->>>>>>> 9ad3888f0696d2b130662521e8f2b0d4946768fe
 }
 
 function chargephotosVehicules() {
