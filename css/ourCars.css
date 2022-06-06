@@ -2,6 +2,7 @@ li {
     list-style-type: none;
     font-size: x-large;
     font-weight: 400 !important;
+    color: white;
 }
 
 body{
@@ -52,7 +53,7 @@ body{
 }
 
 .cards-ourCars:hover .logoMarca-ourCars>img {
-    width: 115px;
+    width: 105px;
 }
 
 .logoMarca-ourCars {
@@ -65,7 +66,7 @@ body{
 }
 
 .logoMarca-ourCars>img {
-    width: 100px;
+    width: 90px;
     margin: 0 0 50px 0;
     transition: width .2s;
 }
