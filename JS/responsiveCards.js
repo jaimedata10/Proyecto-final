@@ -27,7 +27,6 @@
     openFullscreen(img);
   }
 
-
 document.addEventListener('click', function(e) {
   const clickedPaths = e.path; 
   const button = document.querySelector('.dropdown-button');

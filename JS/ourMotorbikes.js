@@ -98,8 +98,6 @@ const motos = {
     { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/yamaha/models/car6.png` }],
 }
 
-
-
 function chargephotosVehicules() {
     var carPhoto1 = document.querySelector('#carPhoto1').src = `photosVehicules/${actualBrand}/models/car1.png`;
     var carPhoto2 = document.querySelector('#carPhoto2').src = `photosVehicules/${actualBrand}/models/car2.png`;

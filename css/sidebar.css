@@ -1,4 +1,3 @@
-
 .sidebar {
     background-color: #e7d8c3;
     position: absolute;
@@ -22,19 +21,17 @@
 }
 
 .cross-closing {
-  margin-top: 18px;
+    margin-top: 18px;
 }
 
 .cross-closing2 {
     margin-top: 18px;
     width: 30px;
     height: 30px;
-   
-  }
+}
 
 .spacing-cross-right {
     margin-right: 70px;
-  
 }
 
 img.logo2 {

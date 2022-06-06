@@ -96,7 +96,6 @@ const coches = {
     { model: 'Serie 1', hp: '150hp', price: '5.000&#8364', srcRute: `photosVehicules/volkswagen/models/car4.png` },
     { model: 'Serie 1', hp: '150hp', price: '16.000&#8364', srcRute: `photosVehicules/volkswagen/models/car5.png` },
     { model: 'Serie 1', hp: '150hp', price: '20.000&#8364', srcRute: `photosVehicules/volkswagen/models/car6.png` }],
-
 }
 
 function chargephotosVehicules() {
@@ -135,5 +134,4 @@ function openModal(value) {
     else {
         carLogo.src = `photosVehicules/${actualBrand}/${actualBrand}.svg`
     }
-
 }
