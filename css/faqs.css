@@ -25,7 +25,6 @@ body {
     color: #5beb90;
 }
 
-
 .containe-r {
     margin: 50px 30%;
 }
@@ -76,11 +75,11 @@ a {
 }
 
 @media (max-width: 960px) {
-.para1-showing {
-    display: none;
-}
+    .para1-showing {
+        display: none;
+    }
 
-.para1-hidden {
-    display: block;
-}
+    .para1-hidden {
+        display: block;
+    }
 }

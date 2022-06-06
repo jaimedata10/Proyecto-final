@@ -15,7 +15,6 @@ function myMedia(Price, Entrance, Months, tae, cont) {
         sumaDivide = '';
     }
 
-
     if (Price === "" || Entrance === "" || Months === "") {
         document.getElementById("demo").innerHTML = "All fields are mandatory";
         return false
@@ -24,7 +23,6 @@ function myMedia(Price, Entrance, Months, tae, cont) {
         document.getElementById("demo").innerHTML = "";
 
         if (cont == 1 && sumaDivide>0 && Price> 0 && Entrance > 0) {
-
             document.getElementById("resultadoFinal").innerHTML = `${sumaDivide}&#8364`;
             document.getElementById("Prize").innerHTML = `${Price}&#8364`;
             document.getElementById("Entrance").innerHTML = `${Entrance}&#8364`;
@@ -32,29 +30,18 @@ function myMedia(Price, Entrance, Months, tae, cont) {
         }
         else{
             document.getElementById("demo").innerHTML = "You have a negative number";
-
         }
-
         return false
     }
-
-
 }
 
 
 function myClean(Price, Entrance, Months, tae, cont) {
 
- 
-
     if (cont == 2) {
-
         document.getElementById("resultadoFinal").innerHTML = '';
         document.getElementById("Prize").innerHTML = '';
         document.getElementById("Entrance").innerHTML = '';
         document.getElementById("Months").innerHTML = '';
     }
-
-
-
 }
-

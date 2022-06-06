@@ -1,4 +1,4 @@
-.calculatorSection{
+.calculatorSection {
     height: auto;
     background-color: rgb(249, 238, 224);
     padding-top: 50px;
@@ -18,7 +18,7 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.card-calculate-final-price{
+.card-calculate-final-price {
     border-collapse: collapse;
     width: 500px;
     height: 420px;
@@ -33,120 +33,106 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
-.two-cards{
+.two-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-
-input{
+input {
     width: 134%;
     height: 33%;
 }
 
-.inputAPR{
+.inputAPR {
     width: 36%;
     height: 33%;
 }
 
-.mySelect{
+.mySelect {
     width: 134%;
     height: 33%;
 }
 
-
-.trTittle{
+.trTittle {
     width: 100%;
 }
 
-.tdTittle{
+.tdTittle {
     font-size: x-large;
-    font-family:inherit;
+    font-family: inherit;
     font-weight: bolder;
     margin-bottom: 7%;
     text-align: center;
     margin-top: 2%;
     margin-bottom: 0;
-
 }
 
-
-.trDivider{
+.trDivider {
     margin-top: 2%;
 }
 
-.ColumnTitle{
+.ColumnTitle {
     width: 24%;
 }
 
-table{
-    border-collapse:initial;
+table {
+    border-collapse: initial;
     height: 80%;
     margin-left: 16%;
 }
 
-
-
-
-.pruebaAPR{
+.pruebaAPR {
     margin-left: 5%;
     margin-top: 10%;
     border-bottom: 1px solid white;
     width: 84%;
 }
 
-
-.TextVarJoin{
+.TextVarJoin {
     width: 100%;
     display: flex;
-
 }
 
-.separateResult{
+.separateResult {
     padding-left: 6px;
-
 }
 
-
-.third-window-title{
-text-align: center;
-color: rgb(61, 59, 59);
-font-size: 55px;
-font-family: "Playfair Display", Georgia, serif;
-margin-top: 120px;
-margin-bottom: 50px;
+.third-window-title {
+    text-align: center;
+    color: rgb(61, 59, 59);
+    font-size: 55px;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-top: 120px;
+    margin-bottom: 50px;
 }
 
 .third-window-subtitle {
-text-align: center;
-color: rgb(61, 59, 59);
-font-size: 35px;
-font-family: "Playfair Display", Georgia, serif;
-margin-top: 10px;
-margin-bottom: 50px;
+    text-align: center;
+    color: rgb(61, 59, 59);
+    font-size: 35px;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
-
-.pruebas{
+.pruebas {
     margin-left: 5%;
     margin-top: 2%;
 }
 
-.demo{
-    color:red;
+.demo {
+    color: red;
     font-size: 20px;
     margin-left: 5%;
 }
 
-
-.tdInput{
+.tdInput {
     width: 40%;
 }
 
-.myButtonCalculator{
+.myButtonCalculator {
     color: white;
     margin-left: -55px;
     border-radius: 6px;
@@ -171,8 +157,6 @@ margin-bottom: 50px;
 
 
 @media (max-width: 960px) {
-
-
     .para1-showing {
         display: none;
     }
@@ -180,6 +164,4 @@ margin-bottom: 50px;
     .para1-hidden {
         display: block;
     }
-  
-
 }
